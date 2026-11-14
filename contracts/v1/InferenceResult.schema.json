@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-soc.local/contracts/v1/InferenceResult.schema.json",
+  "title": "InferenceResult",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "device_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "last_window_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "model_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "binding_revision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807
+    },
+    "enforcement_revision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807
+    },
+    "task": {
+      "const": "attack_associated_traffic"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "abstain",
+        "error"
+      ]
+    },
+    "attack_score": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "score_type": {
+      "const": "uncalibrated_sigmoid"
+    },
+    "inference_ms": {
+      "type": "number",
+      "minimum": 0
+    },
+    "error_code": {
+      "enum": [
+        null,
+        "INVALID_INPUT",
+        "SCHEMA_MISMATCH",
+        "HISTORY_DISCONTINUITY",
+        "MODEL_MISMATCH",
+        "INVALID_COVERAGE",
+        "INSUFFICIENT_HISTORY",
+        "MODEL_NOT_READY",
+        "OVERLOADED",
+        "DEADLINE_EXCEEDED",
+        "REQUEST_ID_CONFLICT",
+        "PREPROCESS_ERROR",
+        "RUNTIME_ERROR"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "request_id",
+    "device_id",
+    "last_window_id",
+    "model_id",
+    "binding_revision",
+    "enforcement_revision",
+    "task",
+    "status",
+    "attack_score",
+    "score_type",
+    "inference_ms",
+    "error_code"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "ok"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "attack_score": {
+            "type": "number"
+          },
+          "error_code": {
+            "const": null
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "attack_score": {
+            "type": "null"
+          },
+          "error_code": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "abstain"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_code": {
+            "enum": [
+              "INVALID_COVERAGE",
+              "INSUFFICIENT_HISTORY"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "error"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_code": {
+            "enum": [
+              "INVALID_INPUT",
+              "SCHEMA_MISMATCH",
+              "HISTORY_DISCONTINUITY",
+              "MODEL_MISMATCH",
+              "MODEL_NOT_READY",
+              "OVERLOADED",
+              "DEADLINE_EXCEEDED",
+              "REQUEST_ID_CONFLICT",
+              "PREPROCESS_ERROR",
+              "RUNTIME_ERROR"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

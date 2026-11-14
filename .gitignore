@@ -1,0 +1,11 @@
+.venv*/
+.uv-cache/
+.tools/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+CSV-Files/
+READMEforBoTIoT.png
+output/documents/.~lock.CNN_IDS_Implementation_and_Optimization_Plan.docx#

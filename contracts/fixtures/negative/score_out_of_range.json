@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "request_id": "req-device12-110",
+  "device_id": "device12",
+  "binding_revision": 3,
+  "last_window_id": "boot7-device12-110",
+  "enforcement_revision": 0,
+  "model_id": "cnn-phase0-untrained",
+  "status": "ok",
+  "task": "attack_associated_traffic",
+  "attack_score": 1.1,
+  "score_type": "uncalibrated_sigmoid",
+  "inference_ms": 0,
+  "error_code": null
+}

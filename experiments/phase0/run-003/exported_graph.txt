@@ -1,0 +1,15 @@
+graph():
+    %p_conv1_weight : [num_users=1] = placeholder[target=p_conv1_weight]
+    %p_conv1_bias : [num_users=1] = placeholder[target=p_conv1_bias]
+    %p_conv2_weight : [num_users=1] = placeholder[target=p_conv2_weight]
+    %p_conv2_bias : [num_users=1] = placeholder[target=p_conv2_bias]
+    %p_output_weight : [num_users=1] = placeholder[target=p_output_weight]
+    %p_output_bias : [num_users=1] = placeholder[target=p_output_bias]
+    %x : [num_users=1] = placeholder[target=x]
+    %conv1d : [num_users=1] = call_function[target=torch.ops.aten.conv1d.default](args = (%x, %p_conv1_weight, %p_conv1_bias, [1], [1]), kwargs = {})
+    %relu : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv1d,), kwargs = {})
+    %conv1d_1 : [num_users=1] = call_function[target=torch.ops.aten.conv1d.default](args = (%relu, %p_conv2_weight, %p_conv2_bias, [1], [1]), kwargs = {})
+    %relu_1 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%conv1d_1,), kwargs = {})
+    %mean : [num_users=1] = call_function[target=torch.ops.aten.mean.dim](args = (%relu_1, [2]), kwargs = {})
+    %linear : [num_users=1] = call_function[target=torch.ops.aten.linear.default](args = (%mean, %p_output_weight, %p_output_bias), kwargs = {})
+    return (linear,)

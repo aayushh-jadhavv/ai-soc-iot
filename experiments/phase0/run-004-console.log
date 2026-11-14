@@ -1,0 +1,29 @@
+Audited 55 packages in 64ms
+......................................................                   [100%]
+54 passed in 6.63s
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cpu for torchao version 0.14.0         Please see GitHub issue #2919 for more info
+[program.cpp:153] InternalConsistency verification requested but not available
+{
+  "system": "Linux",
+  "machine": "x86_64",
+  "native_linux_execution": true,
+  "vm_provenance": {
+    "host_logical_processors": 6,
+    "host_ram_bytes": 8259321856,
+    "host_cpu": "13th Gen Intel(R) Core(TM) i3-1305U",
+    "host_os_version": "10.0.26200",
+    "hypervisor": "WSL2 / Microsoft Hyper-V",
+    "background_workload": "Codex desktop and normal Windows session; not controlled",
+    "host_os": "Microsoft Windows 11 Home Single Language",
+    "host_architecture": "x86_64",
+    "hypervisor_version": "WSL version: 2.7.13.0\r\n\r\nKernel version: 6.18.33.2-2\r\n\r\nWSLg version: 1.0.73.2\r\n\r\nMSRDC version: 1.2.7214\r\n\r\nDirect3D version: 1.611.1-81528511\r\n\r\nDXCore version: 10.0.26100.1-240331-1435.ge-release\r\n\r\nWindows version: 10.0.26200.9974\r\n\r\n\r\n",
+    "guest": "Ubuntu",
+    "approved_environment": "User accepted installed WSL2 guest"
+  },
+  "batch": 1,
+  "parameter_count": 9345,
+  "max_score_abs_error": 5.960464477539063e-08,
+  "max_logit_abs_error": 2.3096799850463867e-07,
+  "delegate_count": 2,
+  "conv2d_substitution": false
+}

@@ -1,0 +1,12 @@
+{
+  "interval_seconds": 0.2,
+  "cpu_convention": "100 percent = one logical core",
+  "sampled_max_rss_by_pid_create_time": {
+    "(437, 1794558306.26)": 400891904,
+    "(464, 1794558317.39)": 16097280
+  },
+  "monitor_collection_ns": 9537875,
+  "monitor_elapsed_ns": 541655566,
+  "monitor_collection_fraction": 0.017608745480887388,
+  "limitations": "Sampled RSS is not exact peak; child RSS is not summed. Collection time is not observer slowdown."
+}

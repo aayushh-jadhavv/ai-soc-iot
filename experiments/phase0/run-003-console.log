@@ -1,0 +1,14 @@
+Audited 55 packages in 56ms
+......................................................                   [100%]
+54 passed in 6.25s
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cpu for torchao version 0.14.0         Please see GitHub issue #2919 for more info
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/aayus/dev/AI-SoC/ids/export/smoke.py", line 199, in <module>
+    main()
+  File "/mnt/c/Users/aayus/dev/AI-SoC/ids/export/smoke.py", line 191, in main
+    run(args, logger)
+  File "/mnt/c/Users/aayus/dev/AI-SoC/ids/export/smoke.py", line 85, in run
+    logger.event("delegate", index=i, **d)
+TypeError: RunLogger.event() got multiple values for argument 'name'

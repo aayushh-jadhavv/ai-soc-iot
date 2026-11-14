@@ -1,0 +1,239 @@
+{
+  "note": "Synthetic validation cases, not benign/attack labels or model measurements",
+  "cases": [
+    {
+      "path": "contracts/fixtures/positive/window.json",
+      "kind": "FeatureWindow",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/sequence.json",
+      "kind": "FeatureSequence",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/idle_sequence.json",
+      "kind": "FeatureSequence",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/single_packet.json",
+      "kind": "FeatureWindow",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/degraded_window.json",
+      "kind": "FeatureWindow",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/ok_result.json",
+      "kind": "InferenceResult",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/abstain_result.json",
+      "kind": "InferenceResult",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/positive/error_result.json",
+      "kind": "InferenceResult",
+      "expected": "valid",
+      "error_code": null
+    },
+    {
+      "path": "contracts/fixtures/negative/wrong_version.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "SCHEMA_MISMATCH"
+    },
+    {
+      "path": "contracts/fixtures/negative/wrong_features.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "SCHEMA_MISMATCH"
+    },
+    {
+      "path": "contracts/fixtures/negative/short_values.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/negative_values.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/fractional_count.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/boolean_count.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/bad_duration.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/unaligned.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/oversized_id.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/timestamp_overflow.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/valid_with_reason.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/invalid_without_reason.json",
+      "kind": "FeatureWindow",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_device_id.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_gateway_id.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_boot_id.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_capture_session_id.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_binding_revision.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_enforcement_revision.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/mixed_observed_mode.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/time_gap.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/sequence_gap.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/duplicate_window.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "HISTORY_DISCONTINUITY"
+    },
+    {
+      "path": "contracts/fixtures/negative/short_history.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/wrong_model.json",
+      "kind": "FeatureSequence",
+      "expected": "error",
+      "error_code": "MODEL_MISMATCH"
+    },
+    {
+      "path": "contracts/fixtures/negative/invalid_coverage.json",
+      "kind": "FeatureSequence",
+      "expected": "abstain",
+      "error_code": "INVALID_COVERAGE"
+    },
+    {
+      "path": "contracts/fixtures/negative/error_has_score.json",
+      "kind": "InferenceResult",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/ok_null_score.json",
+      "kind": "InferenceResult",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/score_out_of_range.json",
+      "kind": "InferenceResult",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/ok_has_error.json",
+      "kind": "InferenceResult",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/abstain_runtime_error.json",
+      "kind": "InferenceResult",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    },
+    {
+      "path": "contracts/fixtures/negative/unknown_field.json",
+      "kind": "InferenceResult",
+      "expected": "error",
+      "error_code": "INVALID_INPUT"
+    }
+  ]
+}

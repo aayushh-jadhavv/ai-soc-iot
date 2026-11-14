@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "feature_schema": "device_window_v1",
+  "window_id": "boot7-device12-103",
+  "gateway_id": "gw-lab-01",
+  "boot_id": "boot7",
+  "capture_session_id": "capture-004",
+  "device_id": "device12",
+  "binding_revision": 3,
+  "sequence_number": 103,
+  "window_start_ms": 1794376800000,
+  "window_end_ms": 1794376801001,
+  "observed_mode": "live",
+  "enforcement_revision": 0,
+  "quality": {
+    "valid": true,
+    "reasons": []
+  },
+  "values": [
+    5,
+    3,
+    300,
+    120,
+    1,
+    5,
+    5,
+    0,
+    0,
+    5,
+    0,
+    3,
+    60,
+    0,
+    75,
+    25
+  ]
+}
