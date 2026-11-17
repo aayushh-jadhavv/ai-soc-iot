@@ -1,0 +1,20 @@
+{
+  "architecture.json": "fc97179c7153e0ccf6906c54f204ad7408d161b6ecfd1d01ff1d7b477f4527df",
+  "audit.json": "b19389d281935923c44c0df9bea0570104cd9d1eed6f5e6fcf15d8486aa0c83d",
+  "best.pt": "5276653f95f5d6eb38b1a92d194f60e95eeac4d69ca7e014dc55de2a1103425b",
+  "config.json": "7e9580b502ed4f655e7358b6888eeaf87406ca9a59d228da5c2e5757d7445b6f",
+  "development_predictions.parquet": "deefb5355a766766ba78a078cab4f49a2c1a7f562cea9fea7f7ce6a9c233252b",
+  "environment.json": "a60da6dadfbe08786b6b5d5479fa294ee0904cb3a78e9868ad625aa0f8b2091c",
+  "extraction_parity.json": "05592b00c50faae3b5ac394098f0cd91d016971d91cbc504c4b82deb41782276",
+  "feature_schema.json": "a9f58e491e656a65c2f924e2c9e6add8e6b4ad4294a38aebebcf7c77c745f459",
+  "fit_window_ids.json": "acf22968ff1cdfc9b34ee2b2b4aad42d108d6bd887b70b20d8976defac3a1b3c",
+  "handoff.json": "63810d789ce070264dbf1dd7b06907a09608b0dcc5a95e016d346f4e75131156",
+  "outcome_access.json": "197e4d22bea481c75557a3de990788ef4a3af7771bc4f5211daeea66cb12fe8e",
+  "parent_provenance.json": "3f04e4436ab11da1d68aec92fe1cf356f96aa9b2c83212d649960bc24200106e",
+  "preprocess.json": "59e7b2667228141d96095f1a878675659c2c302a2a2dc428c94e0b15603c5a9c",
+  "registration.json": "70b164b0c55007ec167d1ab139bc064998cfb42f1c83eda53cad271f7784f3f6",
+  "reserved_index.parquet": "0b71acf7c745c15b6650ed91fc3940250dccb6bf18e5c9892d3ccbb272ece4d5",
+  "result.json": "808b93b81fc3970999f7b7bc62ce9e75ddb33556379b3d3c694baf6318592bba",
+  "resume.pt": "12d28b3d2c9654e4154865e99cd54b3c9551d46a98538de74b451b5ffc7cdd41",
+  "split_manifest.json": "2c10ebe392ad56cc6a43f0336b3b75342522be439afa0de2439be40d1a638004"
+}

@@ -1,1 +1,1 @@
-"""Phase 3 boundary. No training in Phase 0."""
+"""Phase 3 reproducible training; held-out outcome access is intentionally absent."""

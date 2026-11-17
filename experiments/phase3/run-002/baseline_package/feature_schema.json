@@ -1,0 +1,118 @@
+{
+  "feature_schema": "device_window_v1",
+  "schema_version": "1.0",
+  "features": [
+    {
+      "index": 0,
+      "name": "out_packets",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 1,
+      "name": "in_packets",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 2,
+      "name": "out_ip_bytes",
+      "unit": "bytes",
+      "integral": true
+    },
+    {
+      "index": 3,
+      "name": "in_ip_bytes",
+      "unit": "bytes",
+      "integral": true
+    },
+    {
+      "index": 4,
+      "name": "out_unique_dst_ips",
+      "unit": "addresses",
+      "integral": true
+    },
+    {
+      "index": 5,
+      "name": "out_unique_dst_ports",
+      "unit": "ports",
+      "integral": true
+    },
+    {
+      "index": 6,
+      "name": "out_tcp_packets",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 7,
+      "name": "out_udp_packets",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 8,
+      "name": "out_icmp_packets",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 9,
+      "name": "out_syn_no_ack",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 10,
+      "name": "in_syn_ack",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 11,
+      "name": "in_rst",
+      "unit": "packets",
+      "integral": true
+    },
+    {
+      "index": 12,
+      "name": "out_len_mean",
+      "unit": "bytes",
+      "integral": false
+    },
+    {
+      "index": 13,
+      "name": "out_len_std",
+      "unit": "bytes",
+      "integral": false
+    },
+    {
+      "index": 14,
+      "name": "out_iat_mean_ms",
+      "unit": "milliseconds",
+      "integral": false
+    },
+    {
+      "index": 15,
+      "name": "out_iat_std_ms",
+      "unit": "milliseconds",
+      "integral": false
+    }
+  ],
+  "window_ms": 1000,
+  "history_rows": 8,
+  "raw_shape": [
+    8,
+    16
+  ],
+  "tensor_shape": [
+    1,
+    16,
+    8
+  ],
+  "dtype": "float32",
+  "time_interval": "[start,end)",
+  "statistics": "population",
+  "preprocessing_owner": "ids",
+  "transform_version": "log1p_population_zscore_v1"
+}

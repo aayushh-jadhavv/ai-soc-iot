@@ -1,0 +1,148 @@
+{
+  "parent": "C:\\Users\\aayus\\dev\\AI-SoC\\experiments\\phase2\\run-002",
+  "artifacts": {
+    "data_manifest.json": "436544e000eba82cb71277c48b03b7613cdc11b86e71161bf07d438366abd1d0",
+    "split_manifest.json": "c7f5032e6370c540b4cef311068e928380cfa441c822c682b160ab4dce31b075",
+    "preprocess.json": "4f15443ca2d0a3d0b23326347e7e16e8cfec0ef16aee4d185316a9acf40021de",
+    "fit_window_ids.json": "acf22968ff1cdfc9b34ee2b2b4aad42d108d6bd887b70b20d8976defac3a1b3c",
+    "windows.parquet": "8804a94f91ea8ed206726b1d23b321379c4d90a84f5ae676d0d7066aa5659589",
+    "train/raw.npy": "dd74f0fba067aeb2bc184fadbb98f43feb711c01a3bafad0e68f2e8e56c18a06",
+    "train/tensor.npy": "60d945c2440128e8e895e5b803670cf4fa2d96b8abf7ce6f4d738e72b4c52a43",
+    "train/samples.parquet": "704661711f4087ad6c491e02a623da8d29b4c2e5c60464c1f2b315f2470558a0",
+    "validation/raw.npy": "052aeb64e73474f3254e3840675f43f0ae062582ca7159af297d6e7eb3c7daac",
+    "validation/tensor.npy": "7d6cde2aa77eaf214979e6c8544dd861b84b6471e92a09dd222fb1b59d8869e0",
+    "validation/samples.parquet": "056c241606b6c67e79e2af9580b0f5dabc6d0ee7253cbe40a838981c13792134"
+  },
+  "data_manifest": {
+    "created_utc": "2026-11-17T13:40:27.442332+00:00",
+    "stage": "phase2_only_no_training",
+    "status": "implementation_validated_dataset_provisional",
+    "source_collection": "pcaps 22-1-2015",
+    "original_test_name": "UNSW Nour 2",
+    "original_group_id": null,
+    "local_group_id": "unsw-jan22-source-group",
+    "original_capture_ids": [
+      "22-1-2015_1.pcap",
+      "22-1-2015_2.pcap"
+    ],
+    "capture_interval_ns": [
+      1421927376907079000,
+      1421928994866925000
+    ],
+    "time_basis": "integer nanosecond Unix UTC; original PCAP microseconds; no inferred offset",
+    "linktype": 113,
+    "observation_view": "audited one-to-one SLL receive/forward selection",
+    "source_url": "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+    "dataset_version": "local hash-bound UNSW January 22 excerpt",
+    "attribution": "UNSW-NB15, Moustafa and Slay; academic use and attribution terms in Phase 1 manifest",
+    "additional_capture_access": "Official SharePoint link redirected to Microsoft sign-in on 2026-11-17",
+    "source_hashes": {
+      "C:\\Users\\aayus\\datasets-aisoc\\Argus Files\\Argus Files 22-1-2015\\CSV of Argus\\1.csv": "0d438a9ed9ce6a7de2601bbfa6c6907b573d38be9cd6f8fd5ece0cdb2ffc2393",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\1\\conn.log": "6fe29ad146f853b5041c3cc197e668f2e4d95ac118736c8eccd3c4eb55125e5d",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\10\\conn.log": "bb6b7c4b572cc650d6c1f2308798311dceacbf0747f2e20131f1bf535530435b",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\11\\conn.log": "7b19b66e5cf272b91577101a3d733cfaf9ca91d052335192ad120808376df20b",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\12\\conn.log": "e03bad1bc0a177673dcfb9fef310ca778c8695b76a9de1b6cf9081a1f08ee568",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\13\\conn.log": "7e515f48b727de5294eebac9527d542c52a5e71e89c8bc5e147cbb242f956f78",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\14\\conn.log": "147d5463cfbcc6a0b16defebd44f977806516ee88f6cff7b902909fa6b39ebc6",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\15\\conn.log": "1d81b57b242d83bb75040657a42dcc1988f138b05df330b76fcc5bf02e6b0450",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\16\\conn.log": "09fa40e97f9ed7637624242ae3b5f86159b314d20e63dd084aaa1d9c85792225",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\17\\conn.log": "d2707e7fac5d9f1ef55ce256c9dd29474947c40bb52883254f4051d3e861982d",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\18\\conn.log": "e657bfcc48ee875b5a949fabdbbc00f23029494b58d4884ccb6e30410d39f5df",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\2\\conn.log": "201b09b41679c7041062cd7dced4fd807b9968936a3feba6924e3f329645c2e9",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\3\\4\\conn.log": "8988b4889689dc959136677f8800c97f0e968a1781ce3e90ff7eaf1394b98088",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\3\\5\\conn.log": "4a0b7344d6ec909a46e5da9a87f4c9c2b4a0b2f567d49c7562fd365b23cf3c4a",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\3\\6\\conn.log": "d8cce4cc561b15454d1fd6a9aeb3824bc3514f2a47a764b68c6616b9a0814eb7",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\4\\conn.log": "9a5e1b89ba4b3ffdcfe7207b53962f2d92c161009af774a6feb99c0766bc6aca",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\5\\conn.log": "cd808ae0ea7460c0eb56e95c2188a1744d044ebbdc8df4fb77845a314f5886bc",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\6\\conn.log": "a476d7c4a10a384787d169e05fa56f238e09c27197199e3a64667c2ff5c9c0ee",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\7\\conn.log": "b9754adea45e5cff6fd9c5329e18590e78b7c4e357e2ba09579ebbcc26e9d431",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\8\\conn.log": "b4164639ded2b0c8ed1c265b7fafc075c15438b210757d8453f15cf749c37b81",
+      "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\9\\conn.log": "405f77df67f2d35d4f1adbaa88598bfd93e3a4d64747dcec080bfe56e614ddee",
+      "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_1.pcap": "5f5c1b558d42e818f169b4035c7cf185a7c15da7718127927b316dd1189e2b61",
+      "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_2.pcap": "fe21a8b34f38701cbf82dbebccc5cae628ccb1f035cf8a2c9da398a5d96dd1ca",
+      "CSV-Files\\NUSW-NB15_GT.csv": "6d27542cb6457db599e0a78274ac141fec0296531f00ac5569551a276c5ab1a8",
+      "CSV-Files\\UNSW-NB15_1.csv": "7d851bbeabd27894ce39c8e78835c73341fc946652fb7743b9eff193b55eb511",
+      "CSV-Files\\UNSW-NB15_2.csv": "6130ad02873cc6069ae695cf2844f2e8c2e9a9a1b7532dd82ab8f202757cacf8",
+      "CSV-Files\\UNSW-NB15_3.csv": "ae990a96c3dfcd425ce2801aadb1727a34d5e0ae6d8215dbcdae60dedfaef640",
+      "CSV-Files\\UNSW-NB15_4.csv": "cdf563692d51d405541dd659ddcdad9fa01f001f05fe9fc4b67f00ca12fbc96a",
+      "experiments\\phase1\\raw-label-verification-002\\verification.json": "7fb6bc43a1d37571676f2fdc1e96647b81a9f782c589171d6451e14533ace339",
+      "experiments\\phase1\\raw-label-verification-002\\verified_joins.jsonl.gz": "3620883757a5e567f4750f1bd6d61c30a151449d02e971c5a9ba33f006c90639",
+      "experiments\\phase1\\raw-label-verification-002\\verified_final_windows.csv": "8d96c8597a448a4fd9e7b22dccddf891d2aca9a497d4f73b8ca262baa0ec679a",
+      "experiments\\phase1\\raw-audit-001\\config.json": "a16e2c78515fdbf46bb75be2d27f0c7caedaac93ecf5a6359dfbed7894b5474b",
+      "experiments\\phase1\\raw-audit-001\\endpoint_mapping.csv": "ee7c86aac0c9f20e070234961ce7269df4228ab15ab8a25708e673a9691409d7"
+    },
+    "code_hashes": {
+      "ids\\features\\adapters.py": "ec961649bb18a391dc4386aa793066d5c19b7e783e851fd37242eaf5ff1e752b",
+      "ids\\features\\extractor.py": "8cd4c8179a3334df3901b743edf52f40f2d142888d827b7361aee546fef98b10",
+      "ids\\features\\packets.py": "57e25669704b424a12694df6415e0030d6634e2ca075e0c6bc105eabdc958494",
+      "ids\\features\\views.py": "326c552cd646edd5f1c941a863223af3620aff039f8d74ded5d0df3e0837af65",
+      "ids\\features\\__init__.py": "47dccd44b5a4c583b5e6e7e90b962fff8db9a97cdf4b2e7030631d284b587ef9",
+      "ids\\preprocessing.py": "ac7bb2068111b4c853b904be522a3338aaf08c9ac8aa92470f203ca2bca9b54a",
+      "ids\\datasets\\temporal.py": "0a74a3ffa9750660bee95ee04f211bcc53f585f61b5a4ea7d6148f1ae55283fd",
+      "ids\\datasets\\unsw_temporal.py": "094a3c761fe52b398eab55548964e94ac16ed3588f266492298e821bc84bdd68",
+      "ids\\datasets\\build_temporal.py": "764fe00c9a3b626c19034745280b47622e435a84d959e5321236120d93e0d655",
+      "ids\\datasets\\check_temporal.py": "0b6ca9b828109338c506232d17f38147f2c11335b0d4bdf16a32f0dd16ab0a17",
+      "ids\\datasets\\label_policy.py": "1ba28cdef2098bddd080f63e392de629ff631fed99a785166008f7d23e41d87c",
+      "ids\\datasets\\verify_unsw_labels.py": "2376ea325019bf041fc9108fb350467de12e6c0092152276834c5ce701ceef98",
+      "ids\\datasets\\packet_audit.py": "bb8f07f1ad71b83bba303e01a157f8a96fd4a34b5e6ada1b1c573fa8c92b6058",
+      "ids\\datasets\\audit.py": "2b34cfe501cdd1a60bfcd9603db20e8dde9286d5b1b45ccc67557f2e1fe5c458"
+    },
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "capture_bytes": 2000001006,
+    "free_scratch_bytes_before": 66534858752,
+    "elapsed_seconds": 1015.8397941000003,
+    "configuration": {
+      "unique_cap": 4096,
+      "max_devices": 128,
+      "inactivity_seconds": 60,
+      "ordering_allowance_ms": 100,
+      "offline_sort_chunk_packets": 50000,
+      "health_policy": "observed_endpoint_seconds_with_audit_gaps_and_known_quality_events"
+    },
+    "excluded_external_sources": [
+      "CSE-CIC-IDS2018: no accepted captures",
+      "BoT-IoT: no accepted captures"
+    ],
+    "tensor_layout": "float32 [N,16,8]; IDs/labels/families/coverage in samples.parquet",
+    "raw_layout": "float64 [N,8,16] without identifiers or labels"
+  },
+  "split_manifest": {
+    "mode": "within_group_chronological",
+    "partitions": [
+      {
+        "partition_id": "train",
+        "group_id": "unsw-jan22-source-group",
+        "role": "train",
+        "start_ns": 1421927377000000000,
+        "end_ns": 1421928347000000000,
+        "dataset": "UNSW-NB15",
+        "original_session_id": null
+      },
+      {
+        "partition_id": "validation",
+        "group_id": "unsw-jan22-source-group",
+        "role": "validation",
+        "start_ns": 1421928347000000000,
+        "end_ns": 1421928670000000000,
+        "dataset": "UNSW-NB15",
+        "original_session_id": null
+      },
+      {
+        "partition_id": "internal_test",
+        "group_id": "unsw-jan22-source-group",
+        "role": "internal_test",
+        "start_ns": 1421928670000000000,
+        "end_ns": 1421928994000000000,
+        "dataset": "UNSW-NB15",
+        "original_session_id": null
+      }
+    ],
+    "history_rows": 8,
+    "history_purge_seconds": 7,
+    "assignment_before_samples": true,
+    "connection_policy": "purge whole windows touched by any crossing connection or reused tuple"
+  },
+  "registration_sha256": "70b164b0c55007ec167d1ab139bc064998cfb42f1c83eda53cad271f7784f3f6"
+}

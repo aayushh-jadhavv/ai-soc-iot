@@ -1,0 +1,11 @@
+{
+  "command": ".\\.venv-phase2\\Scripts\\python.exe -m pytest -q --tb=short",
+  "exit_code": 0,
+  "passed": 123,
+  "failed": 0,
+  "elapsed_seconds": 18.48,
+  "scope": "Full repository suite including Phase 3 metrics, architecture, outcome projection, purging, exact interruption/resume, data provenance, protected-outcome loader and invalid bare-checkpoint tests",
+  "real_data_verification": "verification.json",
+  "real_checkpoint_replay": "All 965 development logits and scores match exactly",
+  "protected_outcome_evaluation": false
+}

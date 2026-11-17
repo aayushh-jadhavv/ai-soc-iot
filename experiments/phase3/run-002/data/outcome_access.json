@@ -1,0 +1,21 @@
+{
+  "decoded_outcome_roles": [
+    "train",
+    "development"
+  ],
+  "reserved_projection": [
+    "sample_id",
+    "tensor_index",
+    "group_id",
+    "original_group_id",
+    "device_id",
+    "original_device_id",
+    "final_time_ns",
+    "final_window_start_ns",
+    "window_ids"
+  ],
+  "internal_test_files_opened": [],
+  "external_files_opened": [],
+  "annotation_csv_projection": "tuple/time only; no label/category columns",
+  "reserved_predictions_created": false
+}

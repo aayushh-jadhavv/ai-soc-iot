@@ -1,0 +1,13 @@
+{
+  "best.pt": "31188cb5ba55c06f46877f1b2316802ea8ac4c3b66da7c49c478d2e767ea6473",
+  "config.json": "bb55046db56ad560bd8d7fd8b5cc89c2ec593589b82f0c0640141b4c48df5710",
+  "development_predictions.parquet": "285f60406cbb2912832cfecf5371fa5fb19a6f3e75be41a4c9bcc735489ec93e",
+  "environment.json": "a60da6dadfbe08786b6b5d5479fa294ee0904cb3a78e9868ad625aa0f8b2091c",
+  "epoch_metrics.csv": "2c8669149fe5b222e5d1eaa38f04f748eb16c0e6793b644461f93f8b3c646ce4",
+  "epochs.json": "9dbc77c4dd3b5d0be2a2da3dcd2a116442a86072d3b743493127787097ab101f",
+  "events.jsonl": "faaf043617470c6e8d6c9b7aa966b6615674010c2b2da46f9307d4002155bece",
+  "predictions.parquet": "6ffe9fdac66c526b4510724d3fee7d50ba2e598eb9a818d7a3ddd6a27e1e83d6",
+  "result.json": "d55ce593a4052fdf95d32e30e835bac3678100dda3a98b2b99376cf6ec1f6177",
+  "resume.pt": "fb45c5a274b4e64144d10022ddd54dafda28b0b60affda4e52aac18572b3a8a2",
+  "run_manifest.json": "12bf98f0abf6b30d3142ee823278b170a320fdd7268c188579374ea83197359e"
+}

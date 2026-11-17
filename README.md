@@ -1,6 +1,9 @@
 # AI SoC IDS
 
-Untrained 9,345-parameter temporal CNN, versioned raw-window contracts, semantic validators, synthetic positive/negative fixtures, shared run logger and a native Linux ExecuTorch/XNNPACK export probe.
+Temporal IDS with versioned raw-window contracts, shared packet extraction,
+reproducible CPU training and a native Linux ExecuTorch/XNNPACK export probe.
+Phase 3 includes a trained 9,345-parameter baseline and comparisons; the available
+single-group excerpt supports only a provisional development experiment.
 
 Start with [the Phase 0 contract](docs/phase0.md). Run from Ubuntu WSL2 (approved for this task) or a native Linux VM:
 
@@ -17,6 +20,13 @@ Phase 1 inventories the supplied data, audits the two January captures and verif
 Phase 2 provides the shared packet/window extractor, offline and live adapters,
 partitioned temporal datasets, preprocessing and exclusion/leakage checks. The
 supplied excerpt supports a provisional chronological within-group build; it is
-not an independent evaluation dataset. No training has started.
+not an independent evaluation dataset.
 [Phase 2 implementation and gateway handoff](docs/phase2.md)
 · [Phase 2 counts and verification](experiments/phase2/REPORT.md)
+
+Phase 3 trains the 64/32 CNN, direct 32/16 CNN, flattened logistic regression and
+final-window ablation with three seeds and a training-only balancing control.
+The registered threshold reserve and internal/external test outcomes stay locked.
+[Phase 3 training and handoff](docs/phase3.md)
+· [Development results](experiments/phase3/run-002/REPORT.md)
+· [Selected baseline package](experiments/phase3/run-002/baseline_package/handoff.json)

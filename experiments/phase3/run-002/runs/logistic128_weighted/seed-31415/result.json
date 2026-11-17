@@ -1,0 +1,97 @@
+{
+  "variant": "logistic128_weighted",
+  "seed": 31415,
+  "best_epoch": 30,
+  "epochs_completed": 30,
+  "stopping_reason": "maximum_30_epochs",
+  "parameter_count": 129,
+  "positive_weight": 268.0416666666667,
+  "development": {
+    "sample_count": 965,
+    "attack_count": 1,
+    "benign_count": 964,
+    "attack_prevalence": 0.0010362694300518134,
+    "threshold": 0.5,
+    "tn": 869,
+    "fp": 95,
+    "fn": 0,
+    "tp": 1,
+    "precision": 0.010416666666666666,
+    "recall": 1.0,
+    "false_positive_rate": 0.09854771784232365,
+    "attack_f1": 0.020618556701030927,
+    "benign_f1": 0.9481723949809057,
+    "macro_f1": 0.4843954758409683,
+    "pr_auc": 0.3333333333333333,
+    "pr_auc_method": "noninterpolated_average_precision_ties_grouped",
+    "per_family": {
+      "benign": {
+        "support": 964,
+        "independent_source_groups": 1,
+        "detected": 95,
+        "detection_rate": 0.09854771784232365,
+        "binary_vs_benign": null
+      },
+      "dos": {
+        "support": 0,
+        "independent_source_groups": 0,
+        "detected": null,
+        "detection_rate": null,
+        "binary_vs_benign": null
+      },
+      "reconnaissance": {
+        "support": 1,
+        "independent_source_groups": 1,
+        "detected": 1,
+        "detection_rate": 1.0,
+        "binary_vs_benign": {
+          "sample_count": 965,
+          "attack_count": 1,
+          "benign_count": 964,
+          "attack_prevalence": 0.0010362694300518134,
+          "threshold": 0.5,
+          "tn": 869,
+          "fp": 95,
+          "fn": 0,
+          "tp": 1,
+          "precision": 0.010416666666666666,
+          "recall": 1.0,
+          "false_positive_rate": 0.09854771784232365,
+          "attack_f1": 0.020618556701030927,
+          "benign_f1": 0.9481723949809057,
+          "macro_f1": 0.4843954758409683,
+          "pr_auc": 0.3333333333333333,
+          "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+        }
+      }
+    },
+    "per_group": {
+      "unsw-jan22-source-group": {
+        "sample_count": 965,
+        "attack_count": 1,
+        "benign_count": 964,
+        "attack_prevalence": 0.0010362694300518134,
+        "threshold": 0.5,
+        "tn": 869,
+        "fp": 95,
+        "fn": 0,
+        "tp": 1,
+        "precision": 0.010416666666666666,
+        "recall": 1.0,
+        "false_positive_rate": 0.09854771784232365,
+        "attack_f1": 0.020618556701030927,
+        "benign_f1": 0.9481723949809057,
+        "macro_f1": 0.4843954758409683,
+        "pr_auc": 0.3333333333333333,
+        "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+      }
+    },
+    "loss": 0.3364625871181488
+  },
+  "checkpoint_sha256": "b11beaf222621af9c59c2ea508f54ed3931fdd2220e62dfea2d5a6167201f1a3",
+  "state_dict_sha256": "ad4017ed46c0c95da13fd1a24db6c628c2e090290803082dc3099eef5eacf2b3",
+  "resume_sha256": "1d6a5b9de4307aed5691af05d8a217b90f2359a87100cc2a8cf0358f3494a091",
+  "training_seconds": 1.3314574000105495,
+  "cpu_seconds": 1.3125,
+  "run_directory": "runs/logistic128_weighted/seed-31415"
+}

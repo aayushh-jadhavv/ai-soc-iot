@@ -1,0 +1,18 @@
+{
+  "audit.json": "b19389d281935923c44c0df9bea0570104cd9d1eed6f5e6fcf15d8486aa0c83d",
+  "crossing_connections.json": "c562a3d0cae0fa0b00ebfda925daec5953a45de78ffb1a5e2ac434df6a0ffd01",
+  "development/raw.npy": "d9f39fad0d4d609db8d1abfd5852024cdca925fcdd3f93cd2af263f414e376dd",
+  "development/samples.parquet": "f73695aa0ad55ab143bb337a8e52aa50d33494c32368649dcd8f233bcc364024",
+  "development/tensor.npy": "016b4042e59e5563d8918d6de3ae2abb2763c7c41ba38c682e7228b5680306dd",
+  "extraction_parity.json": "05592b00c50faae3b5ac394098f0cd91d016971d91cbc504c4b82deb41782276",
+  "feature_schema.json": "a9f58e491e656a65c2f924e2c9e6add8e6b4ad4294a38aebebcf7c77c745f459",
+  "fit_window_ids.json": "acf22968ff1cdfc9b34ee2b2b4aad42d108d6bd887b70b20d8976defac3a1b3c",
+  "outcome_access.json": "197e4d22bea481c75557a3de990788ef4a3af7771bc4f5211daeea66cb12fe8e",
+  "parent_provenance.json": "3f04e4436ab11da1d68aec92fe1cf356f96aa9b2c83212d649960bc24200106e",
+  "preprocess.json": "59e7b2667228141d96095f1a878675659c2c302a2a2dc428c94e0b15603c5a9c",
+  "reserved_index.parquet": "0b71acf7c745c15b6650ed91fc3940250dccb6bf18e5c9892d3ccbb272ece4d5",
+  "split_manifest.json": "2c10ebe392ad56cc6a43f0336b3b75342522be439afa0de2439be40d1a638004",
+  "train/raw.npy": "dd74f0fba067aeb2bc184fadbb98f43feb711c01a3bafad0e68f2e8e56c18a06",
+  "train/samples.parquet": "e16045fa33e6a187ced7cd0af791f9d70f69be4bbdeda2a159fe29b3ed60f35c",
+  "train/tensor.npy": "60d945c2440128e8e895e5b803670cf4fa2d96b8abf7ce6f4d738e72b4c52a43"
+}

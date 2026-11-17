@@ -14,3 +14,6 @@ tmp/phase2/
 experiments/phase2/**/raw.npy
 experiments/phase2/**/tensor.npy
 experiments/phase2/**/*.parquet
+experiments/phase3/**/data/*/raw.npy
+experiments/phase3/**/data/*/tensor.npy
+experiments/phase3/**/data/*/samples.parquet

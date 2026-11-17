@@ -1,0 +1,13 @@
+{
+  "best.pt": "d7518f55ba03478fa445ef04ae5104acbedf0da76a89dad0646cb812708456d0",
+  "config.json": "588ecf653d169fb44a7e64c5b882ba6fc2444d34a8ee0bd7507c2d6ff985f2c0",
+  "development_predictions.parquet": "2ba5a8913c0ff0255e37bc73198435340b9029aa33d0c765770d29b42ec664b7",
+  "environment.json": "a60da6dadfbe08786b6b5d5479fa294ee0904cb3a78e9868ad625aa0f8b2091c",
+  "epoch_metrics.csv": "0c8c28ea1dad8e62b2b5cc92bd76dcbf132379bec4cde4b5ac49d6e54cc21582",
+  "epochs.json": "1f253c74c6ce943a871e2cd8a33babf606a7a532ebb6bc246344bc3d9d71984e",
+  "events.jsonl": "041c50757586f5bdec1602d1d7bcc40b6b64081873d581461a61ff0681080779",
+  "predictions.parquet": "07e13fdfbc68e6ea6bbbbc8871552f4270d8a9d2053029bf0013d199a305c34b",
+  "result.json": "926d4910c254d15a6141a0c6a9af48f4a0b739e6b1e45b5d7b436484cc4c83de",
+  "resume.pt": "ef50f100a0fb164b824772b56ad2eee7f0f01a2fd4a6e115cff6ad9c1844ae9c",
+  "run_manifest.json": "3a93dc7eb37346e5b269d4f77f042df9021062b8940c794b137ca8227de23cc6"
+}
