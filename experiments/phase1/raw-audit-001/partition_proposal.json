@@ -1,0 +1,132 @@
+{
+  "status": "one_connected_excerpt_group; independent_three_way_split_infeasible",
+  "groups": [
+    {
+      "group_id": "unsw-jan22-source-group",
+      "files": [
+        "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_1.pcap",
+        "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_2.pcap"
+      ],
+      "assignment": null,
+      "reason": "continuous capture plus receive/forward pair across file boundary"
+    }
+  ],
+  "verified_original_session_count": 0,
+  "connected_source_group_count": 1,
+  "preferred_fractions": {
+    "train": 0.6,
+    "validation": 0.2,
+    "internal_test": 0.2
+  },
+  "separate_threshold_subset_feasible_now": false,
+  "chronological_fallback": {
+    "status": "proposal_only_within_session_evaluation; not assigned",
+    "train_epoch_seconds_half_open": [
+      1421927377,
+      1421928347
+    ],
+    "validation_epoch_seconds_half_open": [
+      1421928347,
+      1421928670
+    ],
+    "internal_test_epoch_seconds_half_open": [
+      1421928670,
+      1421928994
+    ],
+    "minimum_warmup_seconds_after_each_boundary": 7,
+    "first_possible_right_sequence_end": "boundary + 8 seconds (exclusive end)",
+    "crossing_bro_connections_to_purge": [
+      {
+        "boundary_epoch_second": 1421928347,
+        "bro_connections": 10,
+        "bro_uids": [
+          "C2DHJg2Axm2KgpPgQ3",
+          "C5yDXq2ARHlfXygO5",
+          "CUfVGF3aCCTf1xEqS2",
+          "CoYpOJ2w2PZTv32DIg",
+          "CRVKN94ObOUDYBKhR",
+          "CCiUKF1YTTkUrLhz31",
+          "CwXgd32cqbF00h3Om3",
+          "Cgmeei3wzoYN0aZ9hh",
+          "CgSpulHmLhIRXgNV8",
+          "CK74bm4Cxn3wJXV6Yc"
+        ],
+        "source_rows": [
+          23968,
+          23980,
+          23981,
+          24572,
+          24586,
+          24645,
+          25541,
+          31846,
+          32445,
+          58182
+        ]
+      },
+      {
+        "boundary_epoch_second": 1421928670,
+        "bro_connections": 22,
+        "bro_uids": [
+          "Cs9SUvzTSZLg1s7Q8",
+          "C8aqpW1Pa80ZOHR4te",
+          "CFJR3Nl80gpk4AbEa",
+          "CG2IrD283loEirrt2l",
+          "C8vaEl1ZxgdDLhVYo4",
+          "CHM7R94bV7GvFliHdd",
+          "CRigOM3FmZyjHAN0tf",
+          "Ca1h9d38Ne5wqFEvki",
+          "CsxkRfRbA6Vp4knGb",
+          "CZQE0A3BCHCCdmZZUf",
+          "CxShgt1mY4TSeNwjE3",
+          "CGucQF14Qyr4yErGS2",
+          "C2uiVS3v9tgf9Kwx17",
+          "C3YGI03YUwEcJvEQ6j",
+          "C9K6VM2z3iG0R0Pjfb",
+          "CYYXGa2kmiT7LB8k31",
+          "C8AoJz4v3akjZ5VB0f",
+          "CCICXz2IA3nzaGqUL",
+          "CgSpulHmLhIRXgNV8",
+          "Cf4vIr4WzAYw2DtAea",
+          "CX2DDm4ZeUSkyPWCLc",
+          "CK74bm4Cxn3wJXV6Yc"
+        ],
+        "source_rows": [
+          31605,
+          31606,
+          31607,
+          31611,
+          31612,
+          31615,
+          31618,
+          31623,
+          31630,
+          31637,
+          31639,
+          31645,
+          31662,
+          31680,
+          31689,
+          31700,
+          31707,
+          31787,
+          32445,
+          33477,
+          38947,
+          58182
+        ]
+      }
+    ],
+    "also_purge_gt_argus_or_packet_identified_crossing_connections": true,
+    "purge_entire_windows_touched_by_crossing_connections_and_sequences_using_them": true,
+    "final_class_support_and_continuity_check": "not established; must precede assignments"
+  },
+  "four_way_independent_target_if_groups_become_available": {
+    "train": 0.6,
+    "selection_validation": 0.1,
+    "threshold_validation": 0.1,
+    "internal_test": 0.2
+  },
+  "external_scores_used_for_tuning": false,
+  "bulk_extraction_allowed": false
+}

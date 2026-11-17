@@ -9,3 +9,8 @@ dist/
 CSV-Files/
 READMEforBoTIoT.png
 output/documents/.~lock.CNN_IDS_Implementation_and_Optimization_Plan.docx#
+tmp/phase1_raw/
+tmp/phase2/
+experiments/phase2/**/raw.npy
+experiments/phase2/**/tensor.npy
+experiments/phase2/**/*.parquet

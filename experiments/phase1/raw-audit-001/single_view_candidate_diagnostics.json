@@ -1,0 +1,21 @@
+{
+  "status": "counterfactual diagnostic only; original captures unchanged",
+  "rule": "Retain receive observation for every one-to-one paired datagram; retain all unpaired observations for separate exclusion",
+  "raw_record_denominator": 3415660,
+  "paired_forward_observations": 1707370,
+  "retained_observation_denominator": 1708290,
+  "retained_candidate_counts": {
+    "excluded:unsupported_ipv4_protocol": 457,
+    "icmp_annotation_adapter_required": 122,
+    "excluded:arp_registry": 442,
+    "in_scope_attack_candidate": 22141,
+    "csv_benign_candidate": 1616699,
+    "out_of_scope_attack_candidate": 68405,
+    "excluded:invalid_or_truncated_ipv4": 3,
+    "excluded:ipv4_fragment": 15,
+    "unmatched": 2,
+    "conflicting_candidates": 4
+  },
+  "training_labels_accepted": 0,
+  "warning": "Coarse annotation tolerance remains provisional; these are observation counts, not unique network events"
+}

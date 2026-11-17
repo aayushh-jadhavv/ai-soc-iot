@@ -1,0 +1,158 @@
+[
+  {
+    "file": "CSV-Files\\UNSW-NB15_1.csv",
+    "retained_rows": 41021
+  },
+  {
+    "file": "CSV-Files\\UNSW-NB15_2.csv",
+    "retained_rows": 0
+  },
+  {
+    "file": "CSV-Files\\UNSW-NB15_3.csv",
+    "retained_rows": 0
+  },
+  {
+    "file": "CSV-Files\\UNSW-NB15_4.csv",
+    "retained_rows": 0
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\10\\conn.log",
+    "rows": 55979,
+    "retained_rows": 0,
+    "min_start_us": 1421950932047602,
+    "max_end_us": 1421953491125447
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\11\\conn.log",
+    "rows": 1796336,
+    "retained_rows": 0,
+    "min_start_us": 1421944821207678,
+    "max_end_us": 1421956175790154
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\12\\conn.log",
+    "rows": 57862,
+    "retained_rows": 0,
+    "min_start_us": 1421956175790162,
+    "max_end_us": 1421958837064228
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\13\\conn.log",
+    "rows": 61248,
+    "retained_rows": 0,
+    "min_start_us": 1421958837064233,
+    "max_end_us": 1421961607732200
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\14\\conn.log",
+    "rows": 66649,
+    "retained_rows": 0,
+    "min_start_us": 1421961607732205,
+    "max_end_us": 1421964372986751
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\15\\conn.log",
+    "rows": 53393,
+    "retained_rows": 0,
+    "min_start_us": 1421964372987200,
+    "max_end_us": 1421966839349260
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\16\\conn.log",
+    "rows": 59132,
+    "retained_rows": 0,
+    "min_start_us": 1421966839349268,
+    "max_end_us": 1421969533140903
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\17\\conn.log",
+    "rows": 61752,
+    "retained_rows": 0,
+    "min_start_us": 1421969533142741,
+    "max_end_us": 1421972060742277
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\18\\conn.log",
+    "rows": 30669,
+    "retained_rows": 0,
+    "min_start_us": 1421944821207678,
+    "max_end_us": 1421972723813602
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\1\\conn.log",
+    "rows": 58174,
+    "retained_rows": 39772,
+    "min_start_us": 1421927381000961,
+    "max_end_us": 1421929804139421
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\2\\conn.log",
+    "rows": 57265,
+    "retained_rows": 0,
+    "min_start_us": 1421929804140220,
+    "max_end_us": 1421932231128552
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\3\\4\\conn.log",
+    "rows": 18881,
+    "retained_rows": 0,
+    "min_start_us": 1421929804140220,
+    "max_end_us": 1421930574528281
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\3\\5\\conn.log",
+    "rows": 19729,
+    "retained_rows": 0,
+    "min_start_us": 1421930574528283,
+    "max_end_us": 1421931432236370
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\3\\6\\conn.log",
+    "rows": 18690,
+    "retained_rows": 0,
+    "min_start_us": 1421931432236380,
+    "max_end_us": 1421932231128552
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\4\\conn.log",
+    "rows": 59751,
+    "retained_rows": 0,
+    "min_start_us": 1421934751807106,
+    "max_end_us": 1421937424311757
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\5\\conn.log",
+    "rows": 57109,
+    "retained_rows": 0,
+    "min_start_us": 1421937424312728,
+    "max_end_us": 1421940205256819
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\6\\conn.log",
+    "rows": 59822,
+    "retained_rows": 0,
+    "min_start_us": 1421940205256826,
+    "max_end_us": 1421943036211833
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\7\\conn.log",
+    "rows": 55785,
+    "retained_rows": 0,
+    "min_start_us": 1421943036211837,
+    "max_end_us": 1421945652125313
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\8\\conn.log",
+    "rows": 56644,
+    "retained_rows": 0,
+    "min_start_us": 1421945652127308,
+    "max_end_us": 1421948285586343
+  },
+  {
+    "file": "C:\\Users\\aayus\\datasets-aisoc\\BRO Files\\BRO Files 22-1-2015\\9\\conn.log",
+    "rows": 58853,
+    "retained_rows": 0,
+    "min_start_us": 1421948285586352,
+    "max_end_us": 1421950932047592
+  }
+]

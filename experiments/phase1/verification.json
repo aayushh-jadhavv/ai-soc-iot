@@ -1,0 +1,40 @@
+{
+  "test_command": "python -m unittest discover -s tests -p test_dataset_audit.py -v",
+  "exit_code": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "csv_boundary_checks": [
+    {
+      "left_file": "UNSW-NB15_1.csv",
+      "left_row": 700001,
+      "right_file": "UNSW-NB15_2.csv",
+      "right_row": 1,
+      "equal_decoded_row": true,
+      "csv_label": "0"
+    },
+    {
+      "left_file": "UNSW-NB15_2.csv",
+      "left_row": 700001,
+      "right_file": "UNSW-NB15_3.csv",
+      "right_row": 1,
+      "equal_decoded_row": true,
+      "csv_label": "0"
+    },
+    {
+      "left_file": "UNSW-NB15_3.csv",
+      "left_row": 700001,
+      "right_file": "UNSW-NB15_4.csv",
+      "right_row": 1,
+      "equal_decoded_row": true,
+      "csv_label": "0"
+    }
+  ],
+  "sha256": {
+    "ids/datasets/audit.py": "2b34cfe501cdd1a60bfcd9603db20e8dde9286d5b1b45ccc67557f2e1fe5c458",
+    "ids/datasets/label_policy.py": "1ba28cdef2098bddd080f63e392de629ff631fed99a785166008f7d23e41d87c",
+    "tests/test_dataset_audit.py": "ae279d69037dffda9951ff2ebd8450eb74681d8381d7be23e58dacae874e6612",
+    "experiments/phase1/audit-002/audit.json": "f16ecd89b69c460936a55596437f9dc2baa5001d77cc67f81180ec6874ed19a9",
+    "experiments/phase1/audit-002/flow_annotation_candidates.json": "8645f802a5c60ffeba861017bb17a7b887054821b339dcb17d16512057ff5eca"
+  },
+  "full_phase0_regression": "not_run_existing_WSL_interpreter_unavailable",
+  "bulk_extraction_performed": false
+}

@@ -1,0 +1,195 @@
+{
+  "mode": "within_group_chronological",
+  "split_manifest_sha256": "4b31b99eb8213045ead03269a6b30a8b56cab0416a17d96fa77705d7c8c1a5ba",
+  "emitted_window_count": 55033,
+  "sample_count": 11148,
+  "exclusions": {
+    "unassigned_capture_edge": 68,
+    "invalid_capture": 17808,
+    "history_warmup": 19174,
+    "unknown_final_label": 1940,
+    "crossing_connection": 1667,
+    "out_of_scope_family": 3228
+  },
+  "counts_by_partition": {
+    "unassigned": {
+      "windows": 68,
+      "invalid_capture": 68,
+      "label:unknown_final_label": 65,
+      "zero_rows": 47,
+      "excluded:unassigned_capture_edge": 68,
+      "label:0": 3
+    },
+    "train": {
+      "windows": 32967,
+      "invalid_capture": 11304,
+      "label:unknown_final_label": 13132,
+      "zero_rows": 11019,
+      "excluded:invalid_capture": 11104,
+      "valid_capture": 21663,
+      "label:0": 15153,
+      "excluded:history_warmup": 11763,
+      "excluded:unknown_final_label": 1027,
+      "samples": 6457,
+      "samples:benign": 6433,
+      "excluded:crossing_connection": 403,
+      "label:out_of_scope_family": 4542,
+      "label:1": 140,
+      "excluded:out_of_scope_family": 2213,
+      "samples:dos": 5,
+      "samples:reconnaissance": 19
+    },
+    "validation": {
+      "windows": 10982,
+      "valid_capture": 7142,
+      "label:0": 5093,
+      "excluded:crossing_connection": 962,
+      "label:unknown_final_label": 4007,
+      "excluded:history_warmup": 3820,
+      "invalid_capture": 3840,
+      "zero_rows": 2435,
+      "excluded:invalid_capture": 3191,
+      "samples": 2178,
+      "samples:benign": 2173,
+      "excluded:unknown_final_label": 267,
+      "label:out_of_scope_family": 1844,
+      "excluded:out_of_scope_family": 564,
+      "label:1": 38,
+      "samples:reconnaissance": 5
+    },
+    "internal_test": {
+      "windows": 11016,
+      "valid_capture": 7426,
+      "label:0": 5242,
+      "excluded:crossing_connection": 302,
+      "excluded:history_warmup": 3591,
+      "samples": 2513,
+      "samples:benign": 2501,
+      "invalid_capture": 3590,
+      "label:unknown_final_label": 4547,
+      "zero_rows": 3505,
+      "excluded:invalid_capture": 3513,
+      "excluded:unknown_final_label": 646,
+      "label:out_of_scope_family": 1166,
+      "label:1": 59,
+      "excluded:out_of_scope_family": 451,
+      "samples:reconnaissance": 11,
+      "label:annotation_conflict": 2,
+      "samples:dos": 1
+    }
+  },
+  "crossing_connection_count": 81,
+  "overlap_checks": [
+    {
+      "left": "internal_test",
+      "right": "train",
+      "shared_window_count": 0,
+      "shared_connection_count": 0
+    },
+    {
+      "left": "internal_test",
+      "right": "validation",
+      "shared_window_count": 0,
+      "shared_connection_count": 0
+    },
+    {
+      "left": "train",
+      "right": "validation",
+      "shared_window_count": 0,
+      "shared_connection_count": 0
+    }
+  ],
+  "shared_source_groups": {
+    "unsw-jan22-source-group": [
+      "internal_test",
+      "train",
+      "validation"
+    ]
+  },
+  "independent_group_evaluation": false,
+  "denominators": "windows are emitted endpoint-seconds; samples are retained labeled final seconds",
+  "unique_used_windows_by_partition": {
+    "train": 11357,
+    "validation": 3703,
+    "internal_test": 4367
+  },
+  "device_hours_by_partition": {
+    "unassigned": 0.01888888888888889,
+    "train": 9.1575,
+    "validation": 3.0505555555555555,
+    "internal_test": 3.06
+  },
+  "undefined_metrics_are_null": true,
+  "capture_quality_reason_counts": {
+    "audited_capture_gap": 1292,
+    "binding_transition": 68,
+    "capture_health_unverified": 16953,
+    "partial_capture_edge": 68,
+    "bro_content_gap": 1610,
+    "unsupported_ipv4_protocol": 194,
+    "truncated_ipv4": 6,
+    "ipv4_fragment": 16
+  },
+  "packet_counts": {
+    "raw_records": 3415660,
+    "retained_observations": 1708290
+  },
+  "capture_view_counts": {
+    "raw_records": 3415660,
+    "unpaired_forward": 340,
+    "retained_observations": 1708290,
+    "paired_forward": 1707370,
+    "cross_file_pair": 1
+  },
+  "extractor_counts": {
+    "quality:audited_capture_gap": 38,
+    "packet_records": 1708290,
+    "windows": 55033,
+    "invalid_windows": 18802,
+    "arp_registry": 442,
+    "valid_windows": 36231,
+    "inactivity_resets": 1,
+    "reactivations": 1,
+    "quality:bro_content_gap": 28068,
+    "quality:partial_capture_edge": 1
+  },
+  "packet_label_evidence_counts": {
+    "packet_label:unknown": 71820,
+    "packet_label:benign": 1567450,
+    "packet_label:excluded": 68405,
+    "packet_label:attack": 171,
+    "packet_label:conflict": 2
+  },
+  "verified_source_connections_by_family": {
+    "benign": 35038,
+    "exploits": 24,
+    "reconnaissance": 162,
+    "generic": 26,
+    "dos": 9,
+    "shellcode": 25,
+    "fuzzers": 137
+  },
+  "retained_retransmissions": true,
+  "physical_sensor_drop_counters_available": false,
+  "healthy_silence_in_this_capture": "unverified; no silent row certified valid",
+  "coverage_valid_windows": 36231,
+  "labeled_windows": 25728,
+  "labeled_valid_windows": 25717,
+  "quality_events": 28107,
+  "threshold_subset": null,
+  "external_evaluation_performed": false,
+  "dataset_freeze_ready": false,
+  "limitations_and_freeze_blockers": [
+    "Only one connected original capture group; evaluation is within-group, not independent.",
+    "Original provider session and device IDs are unavailable and remain null.",
+    "Physical sensor drop counters are unavailable; coverage is observational.",
+    "validation has no retained dos samples."
+  ],
+  "preprocessing": {
+    "unique_training_window_count": 11357,
+    "fit_window_ids_sha256": "9e0ac1f08c1bb020b473b647e9ffaabd404cffb638dfe6e89a4b26bc06474689",
+    "variance_ddof": 0,
+    "epsilon": 1e-06
+  },
+  "training_performed": false
+}

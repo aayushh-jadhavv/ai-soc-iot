@@ -1,0 +1,23 @@
+test_bom_does_not_become_endpoint_identity (tests.test_dataset_audit.AuditTests.test_bom_does_not_become_endpoint_identity) ... ok
+test_candidate_overlap_is_not_packet_verification (tests.test_dataset_audit.AuditTests.test_candidate_overlap_is_not_packet_verification) ... ok
+Auditing UNSW_NB15_testing-set.csv
+Auditing UNSW_NB15_training-set.csv
+{"output": "C:\\Users\\aayus\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\AC\\#!sandbox.{cfc2cf14-8700-4603-a78e-807a7a33b840}\\Temp\\tmpyvy16qwh\\result", "gate": "BLOCKED_PENDING_RAW_CAPTURE_AUDIT", "candidate_outcomes": {}}
+test_csv_evidence_gate_and_duplicate_ids (tests.test_dataset_audit.AuditTests.test_csv_evidence_gate_and_duplicate_ids) ... ok
+test_bidirectional_attack_and_role (tests.test_dataset_audit.LabelPolicyTests.test_bidirectional_attack_and_role) ... ok
+test_conflicting_and_duplicate_annotations (tests.test_dataset_audit.LabelPolicyTests.test_conflicting_and_duplicate_annotations) ... ok
+test_explicit_units_and_offset (tests.test_dataset_audit.LabelPolicyTests.test_explicit_units_and_offset) ... ok
+test_half_open_time_tuple_protocol_and_session (tests.test_dataset_audit.LabelPolicyTests.test_half_open_time_tuple_protocol_and_session) ... ok
+test_normal_idle_and_out_of_scope (tests.test_dataset_audit.LabelPolicyTests.test_normal_idle_and_out_of_scope) ... ok
+test_positive_unknown_and_invalid_coverage (tests.test_dataset_audit.LabelPolicyTests.test_positive_unknown_and_invalid_coverage) ... ok
+test_conflicts_and_normal_candidates (tests.test_packet_audit.PacketAuditTests.test_conflicts_and_normal_candidates) ... ok
+test_fragment_has_no_transport_label (tests.test_packet_audit.PacketAuditTests.test_fragment_has_no_transport_label) ... ok
+test_nested_bro_log_is_inventoried (tests.test_packet_audit.PacketAuditTests.test_nested_bro_log_is_inventoried) ... ok
+test_pcap_precise_clock_and_partial_record_rejection (tests.test_packet_audit.PacketAuditTests.test_pcap_precise_clock_and_partial_record_rejection) ... ok
+test_sll_ipv4_offset_and_udp_ports (tests.test_packet_audit.PacketAuditTests.test_sll_ipv4_offset_and_udp_ports) ... ok
+test_truncated_ipv4 (tests.test_packet_audit.PacketAuditTests.test_truncated_ipv4) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.099s
+
+OK

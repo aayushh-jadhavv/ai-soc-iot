@@ -1,0 +1,23 @@
+{
+  "method": "Extracted file bytes/CRC32 compared with local ZIP central directory; no archive payload decompression and no publisher authentication",
+  "archives": [
+    {
+      "archive": "C:\\Users\\aayus\\datasets-aisoc\\downloads\\Argus.zip",
+      "checked_members": 90,
+      "matches": 90,
+      "problems": []
+    },
+    {
+      "archive": "C:\\Users\\aayus\\datasets-aisoc\\downloads\\BRO.zip",
+      "checked_members": 635,
+      "matches": 635,
+      "problems": []
+    },
+    {
+      "archive": "C:\\Users\\aayus\\datasets-aisoc\\downloads\\Reports.zip",
+      "checked_members": 2,
+      "matches": 2,
+      "problems": []
+    }
+  ]
+}

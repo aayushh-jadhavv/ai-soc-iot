@@ -1,0 +1,75 @@
+{
+  "packet_incidences": {
+    "infrastructure_or_unmapped": {
+      "out_packets": 443,
+      "label:excluded:unsupported_ipv4_protocol": 648,
+      "label:icmp_annotation_adapter_required": 235,
+      "in_packets": 440
+    },
+    "Server2_security_component_client_pool": {
+      "out_packets": 112834,
+      "label:in_scope_attack_candidate": 44282,
+      "in_packets": 96008,
+      "label:out_of_scope_attack_candidate": 136803,
+      "label:csv_benign_candidate": 27458,
+      "label:excluded:ipv4_fragment": 18,
+      "label:excluded:unsupported_ipv4_protocol": 263,
+      "label:icmp_annotation_adapter_required": 7,
+      "label:conflicting_candidates": 8,
+      "label:excluded:invalid_or_truncated_ipv4": 3
+    },
+    "Server3_server_pool": {
+      "in_packets": 1494428,
+      "label:in_scope_attack_candidate": 44282,
+      "out_packets": 1920347,
+      "label:out_of_scope_attack_candidate": 136803,
+      "label:csv_benign_candidate": 3233390,
+      "label:excluded:ipv4_fragment": 18,
+      "label:excluded:invalid_or_truncated_ipv4": 3,
+      "label:conflicting_candidates": 8,
+      "label:unmatched": 4,
+      "label:excluded:unsupported_ipv4_protocol": 263,
+      "label:icmp_annotation_adapter_required": 4
+    },
+    "Server1_normal_application_client_pool": {
+      "out_packets": 1381594,
+      "label:csv_benign_candidate": 3205932,
+      "in_packets": 1824342,
+      "label:unmatched": 4
+    }
+  },
+  "observed_window_candidates": {
+    "Server3_server_pool": {
+      "benign_candidate": 15286,
+      "out_of_scope_or_unresolved_attack": 4223,
+      "positive_candidate": 1061,
+      "invalid_observed_coverage": 108,
+      "unknown": 3,
+      "conflicting_candidates": 2
+    },
+    "Server2_security_component_client_pool": {
+      "positive_candidate": 659,
+      "out_of_scope_or_unresolved_attack": 3248,
+      "benign_candidate": 447,
+      "invalid_observed_coverage": 108,
+      "conflicting_candidates": 2,
+      "unknown": 1
+    },
+    "Server1_normal_application_client_pool": {
+      "benign_candidate": 12931,
+      "unknown": 1
+    }
+  },
+  "packet_denominator_note": "A packet contributes to both endpoint roles; self-addressed traffic contributes twice. Raw capture views retained.",
+  "full_second_grid": 54978,
+  "observed_full_endpoint_seconds": 38059,
+  "silent_full_endpoint_seconds_unknown": 16919,
+  "partial_boundary_endpoint_seconds_excluded": 68,
+  "initial_seven_context_seconds_before_first_8s_sequence": 238,
+  "boundaries_seconds": {
+    "first_complete": 1421927377,
+    "complete_stop_exclusive": 1421928994
+  },
+  "supervised_label_coverage_verified": null,
+  "accepted_training_sequences": 0
+}

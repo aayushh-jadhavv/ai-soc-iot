@@ -1,0 +1,102 @@
+{
+  "independent_decoder": "Wireshark tshark 4.6.9",
+  "crosschecked_classes": {
+    "benign": {
+      "file": "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_1.pcap",
+      "frames": [
+        942,
+        943,
+        944,
+        945
+      ],
+      "sll_types": [
+        0,
+        4,
+        0,
+        4
+      ],
+      "first_packet_us": 1421927421321626,
+      "last_packet_us": 1421927421322713,
+      "raw_forward_reverse_packet_counts_and_ip_bytes": [
+        2,
+        2,
+        146,
+        178
+      ],
+      "source_flow_row": 75,
+      "bro_uid": "CuY9xN2yE7OOX362qj",
+      "argus_csv_row": 156,
+      "gt_rows": [],
+      "bro_packet_and_byte_totals_match": true
+    },
+    "reconnaissance": {
+      "file": "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_1.pcap",
+      "frames": [
+        362352,
+        362353
+      ],
+      "sll_types": [
+        0,
+        4
+      ],
+      "first_packet_us": 1421927589774170,
+      "last_packet_us": 1421927589774180,
+      "raw_forward_reverse_packet_counts_and_ip_bytes": [
+        2,
+        0,
+        168,
+        0
+      ],
+      "source_flow_row": 4867,
+      "bro_uid": "CHTSNV3iALkSNEID97",
+      "argus_csv_row": 4806,
+      "gt_rows": [
+        192
+      ],
+      "bro_packet_and_byte_totals_match": true
+    },
+    "dos": {
+      "file": "C:\\Users\\aayus\\datasets-aisoc\\pcap files\\22-1-2015_1.pcap",
+      "frames": [
+        1063007,
+        1063008
+      ],
+      "sll_types": [
+        0,
+        4
+      ],
+      "first_packet_us": 1421927954894980,
+      "last_packet_us": 1421927954894992,
+      "raw_forward_reverse_packet_counts_and_ip_bytes": [
+        2,
+        0,
+        702,
+        0
+      ],
+      "source_flow_row": 13504,
+      "bro_uid": "CeGqwv33WAjqx0nXWg",
+      "argus_csv_row": 13243,
+      "gt_rows": [
+        996
+      ],
+      "bro_packet_and_byte_totals_match": true
+    }
+  },
+  "verified_connection_artifact_counts_reconciled": true,
+  "final_window_counts_reconciled": true,
+  "accepted_context_counts": {
+    "benign": 11414,
+    "reconnaissance": 44,
+    "dos": 6
+  },
+  "distinct_endpoints_with_accepted_context": {
+    "benign": 22,
+    "reconnaissance": 9,
+    "dos": 4
+  },
+  "distinct_final_seconds_with_accepted_context": {
+    "benign": 1571,
+    "reconnaissance": 42,
+    "dos": 4
+  }
+}

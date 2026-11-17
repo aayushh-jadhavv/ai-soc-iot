@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "source_capture": "22-1-2015_1.pcap",
+  "source_sha256": "5f5c1b558d42e818f169b4035c7cf185a7c15da7718127927b316dd1189e2b61",
+  "source_frame_numbers": [
+    932,
+    934,
+    936,
+    942,
+    944,
+    946,
+    948,
+    950
+  ],
+  "original_two_view_records": 16,
+  "retained_receive_observations": 8,
+  "epoch_interval_ns": [
+    1421927421000000000,
+    1421927422000000000
+  ],
+  "endpoint": "59.166.0.1",
+  "expected_values": [
+    5,
+    3,
+    289,
+    201,
+    3,
+    3,
+    4,
+    1,
+    0,
+    2,
+    2,
+    0,
+    57.8,
+    7.807688518377254,
+    25.5095,
+    42.581700873145024
+  ],
+  "outgoing_lengths": [
+    56,
+    52,
+    73,
+    56,
+    52
+  ],
+  "outgoing_gaps_ms": [
+    0.753,
+    99.262,
+    1.316,
+    0.707
+  ],
+  "population_statistics": true,
+  "offline_live_equal": true,
+  "full_dataset_window_equal": true,
+  "raw_fixture_sha256": "c44ae05aa3bc78800f22b800a599e9072c38016ea1fa84a85b5f4fb4a37abdef",
+  "compared_fields": [
+    "values",
+    "quality"
+  ],
+  "independent_decoder": "Wireshark tshark; see real-window-tshark.csv",
+  "fixture_kind": "eight actual original capture records, single audited receive view",
+  "original_collection": "UNSW-NB15 January 22; academic attribution applies"
+}

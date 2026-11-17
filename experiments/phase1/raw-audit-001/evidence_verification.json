@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "trace_records_reread_and_hash_checked": 39,
+  "primary_packet_counts_sum_to_denominator": true,
+  "window_counts_sum_to_observed_denominator": true,
+  "paired_forward_counts_sum_to_pair_denominator": true,
+  "single_view_counts_sum_to_retained_denominator": true,
+  "capinfos_matches": true
+}

@@ -1,0 +1,19 @@
+{
+  "counts_and_leakage.json": "97857dde1c05be13b3746e9d66898addbb68df51ece1799c5df6e934a599a9af",
+  "data_manifest.json": "2d3ed8e5fb20dcd7ef12fd26177671d808662e45462fa4d4479e32230f00fada",
+  "fit_window_ids.json": "acf22968ff1cdfc9b34ee2b2b4aad42d108d6bd887b70b20d8976defac3a1b3c",
+  "internal_test\\raw.npy": "29bbcafa6ae4023b9a663c722677539e9540682d576f63469a01c1024abc4a5c",
+  "internal_test\\samples.parquet": "421f00fa5fb6e8b94f27c683753574827c93e49fc31c88d784f55d8bf4b0ab77",
+  "internal_test\\tensor.npy": "579d0781fd200cd9343cf5b0999cedf1fc5fbad0d2ecc93f28078d9bb242eefc",
+  "preprocess.json": "4f15443ca2d0a3d0b23326347e7e16e8cfec0ef16aee4d185316a9acf40021de",
+  "quality_events.json": "8458c778b64f409e2345bbc6bf64209c2e2f0a43f9ba75fa4729554946ad12b5",
+  "REPORT.md": "21501a6d7c059fb87df7b1e7861fb105d42454606e9d7ddeffbec577612b3144",
+  "split_manifest.json": "c7f5032e6370c540b4cef311068e928380cfa441c822c682b160ab4dce31b075",
+  "train\\raw.npy": "dd74f0fba067aeb2bc184fadbb98f43feb711c01a3bafad0e68f2e8e56c18a06",
+  "train\\samples.parquet": "67990c6f7c15501d45470b72e5a9c27e417a01a2bcdd9f50e6aa99747ca07e3d",
+  "train\\tensor.npy": "60d945c2440128e8e895e5b803670cf4fa2d96b8abf7ce6f4d738e72b4c52a43",
+  "validation\\raw.npy": "052aeb64e73474f3254e3840675f43f0ae062582ca7159af297d6e7eb3c7daac",
+  "validation\\samples.parquet": "5039a95b0fff9e9ccd1f79909d25fc30ee5a08ce17e94e257f4f83405fdb70e3",
+  "validation\\tensor.npy": "7d6cde2aa77eaf214979e6c8544dd861b84b6471e92a09dd222fb1b59d8869e0",
+  "windows.parquet": "e1324e2edf9421e06f5d80c0a64776db136d994f0746f0c39449e0699edd8a52"
+}

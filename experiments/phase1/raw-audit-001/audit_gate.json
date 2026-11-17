@@ -1,0 +1,23 @@
+{
+  "audit_status": "complete_for_supplied_excerpt",
+  "scope": "Phase 1 inventory, source interpretation, packet diagnostics, label policy and partition proposal",
+  "bulk_extraction_allowed": false,
+  "training_sequences_generated": 0,
+  "model_scores_computed": false,
+  "external_scores_used_for_tuning": false,
+  "connected_source_groups": 1,
+  "independent_three_way_partition_feasible": false,
+  "separate_threshold_group_feasible": false,
+  "prepared": ["source_hash_inventory", "capture_manifest", "excerpt_endpoint_mapping", "timestamp_alignment_diagnostics", "capture_view_pairing", "bidirectional_packet_annotation_traces", "coverage_and_exclusions", "conditional_partition_proposal"],
+  "remaining_before_supervised_extraction": [
+    "Normalize packet/connection joins conservatively using verified precision and source identity; do not promote the diagnostic +/-1 second search interval to ground truth",
+    "Resolve or exclude coarse-time collisions, opposite-direction label conflicts and unmatched records",
+    "Apply an explicit capture-view policy retaining provenance and genuine retransmissions",
+    "Determine usable continuous endpoint windows with unknown silence, fragments, unsupported protocols and malformed records excluded as required",
+    "Freeze an evaluation design consistent with one source group or independently audit additional source groups"
+  ],
+  "unrecoverable_or_unsupplied_source_facts": ["authenticated original unique session IDs", "original sniffer interface and drop metadata", "publisher checksums", "exact download timestamps", "globally documented GT rounding and inclusive-end semantics"],
+  "user_action_required_for_this_audit": false,
+  "all_80_unsw_pcaps_required_for_this_audit": false,
+  "external_adapters": {"CSE-CIC-IDS2018": "not_validated_no_source_captures", "BoT-IoT": "not_validated_no_source_captures"}
+}
