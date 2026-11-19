@@ -1,0 +1,182 @@
+{
+  "delegates": [
+    {
+      "name": "lowered_module_0",
+      "backend": "XnnpackBackend",
+      "operators": [
+        {
+          "node": "aten_convolution_default",
+          "target": "<EdgeOpOverload: aten.convolution.default>: schema = aten::convolution(Tensor input, Tensor weight, Tensor? bias, SymInt[] stride, SymInt[] padding, SymInt[] dilation, bool transposed, SymInt[] output_padding, SymInt groups) -> Tensor"
+        },
+        {
+          "node": "aten_relu_default",
+          "target": "<EdgeOpOverload: aten.relu.default>: schema = aten::relu(Tensor self) -> Tensor"
+        },
+        {
+          "node": "aten_convolution_default_1",
+          "target": "<EdgeOpOverload: aten.convolution.default>: schema = aten::convolution(Tensor input, Tensor weight, Tensor? bias, SymInt[] stride, SymInt[] padding, SymInt[] dilation, bool transposed, SymInt[] output_padding, SymInt groups) -> Tensor"
+        },
+        {
+          "node": "aten_relu_default_1",
+          "target": "<EdgeOpOverload: aten.relu.default>: schema = aten::relu(Tensor self) -> Tensor"
+        }
+      ],
+      "serialized_operators": [
+        {
+          "op": "XNNStaticReshape",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticTranspose",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNConv2d",
+          "output_range": {
+            "output_min": 0.0,
+            "output_max": "inf"
+          },
+          "tensors": {
+            "input1_id": "fp32",
+            "filter_id": "fp32",
+            "bias_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticTranspose",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticReshape",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticReshape",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticTranspose",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNConv2d",
+          "output_range": {
+            "output_min": 0.0,
+            "output_max": "inf"
+          },
+          "tensors": {
+            "input1_id": "fp32",
+            "filter_id": "fp32",
+            "bias_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticTranspose",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        },
+        {
+          "op": "XNNStaticReshape",
+          "output_range": null,
+          "tensors": {
+            "input_id": "fp32",
+            "output_id": "fp32"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lowered_module_1",
+      "backend": "XnnpackBackend",
+      "operators": [
+        {
+          "node": "aten_linear_default",
+          "target": "<EdgeOpOverload: aten.linear.default>: schema = aten::linear(Tensor input, Tensor weight, Tensor? bias=None) -> Tensor"
+        }
+      ],
+      "serialized_operators": [
+        {
+          "op": "XNNFullyConnected",
+          "output_range": null,
+          "tensors": {
+            "input1_id": "fp32",
+            "filter_id": "fp32",
+            "bias_id": "fp32",
+            "output_id": "fp32"
+          }
+        }
+      ]
+    }
+  ],
+  "top_level_calls": [
+    {
+      "node": "executorch_call_delegate",
+      "target": "executorch_call_delegate"
+    },
+    {
+      "node": "getitem_1",
+      "target": "<built-in function getitem>"
+    },
+    {
+      "node": "aten_mean_dim",
+      "target": "<EdgeOpOverload: aten.mean.dim>: schema = aten::mean.dim(Tensor self, int[1]? dim, bool keepdim=False, *, ScalarType? dtype=None) -> Tensor"
+    },
+    {
+      "node": "executorch_call_delegate_1",
+      "target": "executorch_call_delegate"
+    },
+    {
+      "node": "getitem",
+      "target": "<built-in function getitem>"
+    }
+  ],
+  "note": "getitem is output unpacking. Runtime execution-plan operators below are the fallback kernel inventory.",
+  "runtime_delegates": [
+    "XnnpackBackend",
+    "XnnpackBackend"
+  ],
+  "runtime_fallback_operators": [
+    {
+      "name": "aten::mean",
+      "overload": "out",
+      "tensor_dtypes": [
+        "FLOAT",
+        "FLOAT",
+        "FLOAT"
+      ]
+    }
+  ],
+  "int8_affine_ops": 0,
+  "affine_ops": 3,
+  "pte_bytes": 18052,
+  "pte_sha256": "986fe5c7d2aed5e369b595eaf06c37752b77596d6d711ab75cefef9e6a8e8a1b"
+}

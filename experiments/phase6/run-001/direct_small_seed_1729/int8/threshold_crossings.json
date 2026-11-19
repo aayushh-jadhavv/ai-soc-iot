@@ -1,0 +1,41 @@
+[
+  {
+    "reference_index": 645,
+    "role": "development",
+    "tolerance_subset": "check",
+    "sample_id": "4f1a7e98b3de6daf42a60bf338896b669e04b111eb4c4f91d5e561f10b4b7534",
+    "group_id": "unsw-jan22-source-group",
+    "label": 0,
+    "family": "benign",
+    "threshold": 0.5,
+    "logits": {
+      "eager": -0.05876670777797699,
+      "exported": 0.0,
+      "runtime": 0.0,
+      "float_runtime": -0.05876675993204117
+    },
+    "scores": {
+      "eager": 0.48531254976976124,
+      "exported": 0.5,
+      "runtime": 0.5,
+      "float_runtime": 0.48531253674249597
+    },
+    "decisions": {
+      "eager": 0,
+      "exported": 1,
+      "runtime": 1,
+      "float_runtime": 0
+    },
+    "signed_score_margins": {
+      "eager": -0.014687450230238763,
+      "exported": 0.0,
+      "runtime": 0.0,
+      "float_runtime": -0.01468746325750403
+    },
+    "stage_evidence": [
+      "Decision first changes in the converted PT2E graph."
+    ],
+    "runtime_correct": false,
+    "replay_exact": true
+  }
+]

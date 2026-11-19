@@ -43,3 +43,10 @@ and applies the fixed development recall/macro-F1 loss gates. It preserves the
 unpruned and direct-small comparisons and freezes architectures for later export.
 [Phase 5 implementation and reproduction](docs/phase5.md)
 · [Compaction and fine-tuning results](experiments/phase5/run-001/REPORT.md)
+
+Phase 6 exports the seven frozen checkpoints at batch one in the pinned Linux
+ExecuTorch/XNNPACK runtime. It measures numerical agreement, threshold changes,
+operator precision and VM latency. The selected `ga_3` handoff uses float32.
+[Phase 6 reproduction](docs/phase6.md)
+· [Export and PTQ results](experiments/phase6/run-001/REPORT.md)
+· [Selected program and checksum](experiments/phase6/run-001/handoff.json)

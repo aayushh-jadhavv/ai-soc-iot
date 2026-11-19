@@ -1,0 +1,821 @@
+{
+  "seed": 1729,
+  "max_per_stratum": 32,
+  "population": 6457,
+  "available": {
+    "idle": 0,
+    "benign_burst": 644,
+    "benign_other": 5789,
+    "attack/dos": 5,
+    "attack/reconnaissance": 19
+  },
+  "selected_counts": {
+    "attack/reconnaissance": 19,
+    "benign_burst": 32,
+    "benign_other": 32,
+    "attack/dos": 5
+  },
+  "samples": [
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "4da555944cb2f7c858a6868e6582149f869088c8d262d5015392804aac3dc6bb",
+      "tensor_index": 4053,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 13,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "32a667591cc561fa6f1fbf9ee270b616ec81b024814de6cd3fe53e6a6d4e0e9c",
+      "tensor_index": 2678,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 366,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "1f60a0c5510614c14c02fa220b4ffef038a5bdba4a919d37792c69fe67678d34",
+      "tensor_index": 4148,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 263,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "daefe93255230d94cc5d5eb697a9d42b27e36a600f08e0f829968d5d5e512416",
+      "tensor_index": 3320,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 24,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "8a315e338d4dd49b17c22949fe26aca5d3c52ecb0fa1e00f5f109c5bd0bbd15a",
+      "tensor_index": 3349,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 330,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "784d5516dab0aa9e0d8bbce191312a866e15460fac8485fca99fe34786e5e674",
+      "tensor_index": 4054,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 11,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "49d30ee3fe7a1f992c4dd97d8ccdc37e0d4f1fd4ef8cad969eefaea86cb706d0",
+      "tensor_index": 706,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 380,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "12a7b81a5c19188f48c052d04d33d294992dcf51b9c8282488a0dcc4021a44d7",
+      "tensor_index": 4045,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 8,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "6a110a92da9aad159e0a091097174fb029df33983c973964d17497e329c9745e",
+      "tensor_index": 1253,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 298,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "3d3b7fe5fb0f78dafa3dd8edfc1ddb1b2aa8a97bea6162fd1df63a32fada2713",
+      "tensor_index": 4062,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 16,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "bad1dd351be577e7ce1c087bfae3d6255494d3704ec034239b4a46c5b2b1610b",
+      "tensor_index": 5867,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 291,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "d0a916a953fa7cb07be809f55ccd6633df3c464f12f7cd41bf0782775e4ab408",
+      "tensor_index": 1088,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 200,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "92f20465b456eefc4038293cf7aa4b1e0ea45599ae8056deeea29eab2c40bae4",
+      "tensor_index": 1266,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 263,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "5fd2741939d672a53526115e2033e6aca13e6c83cd4d8fa2a88478d6170cef87",
+      "tensor_index": 5042,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 88,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "cf6bb53ffce1a6c107ad0c2116989f46c53ecc03a8f9bbf081912c5c1ecdeeb0",
+      "tensor_index": 5056,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 44,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "f009fb70269ca704b552900bbb7b546e74c57f7e57f31e0239be163c62d795b1",
+      "tensor_index": 4159,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 84,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "235aa5fd4cb05999667c504c201f11684bb9cdce3efc3a350ef4da25de594d10",
+      "tensor_index": 4058,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 6,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "5fd47ec2d332d186d71e38083df9cf3f790ff11463f1c70a831fb18448704cee",
+      "tensor_index": 1712,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 613,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "eb0a6b95f2c7f771f151145af6eb3541820ddef98e3c9284a01f268fae8c4342",
+      "tensor_index": 3650,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 79,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "1e311e376b5b8daee47d8f8fdac45647bc473fa041961ce1b53fef2eb3d1fc98",
+      "tensor_index": 4065,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 360,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "9d0c18ae4ebc96245163b5c36d10db96a7157641dd50eb271003b1214353cef2",
+      "tensor_index": 4051,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 14,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "9d209ac9d6bb55a98a57705791b822a024e15c799ac3d08f137d09bf0367dc72",
+      "tensor_index": 5186,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 78,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "849bc6c7d842bf60d0e809bf9e6ef30f58b8df80b1681174db972f8a3dde3b36",
+      "tensor_index": 152,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 136,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "7c881f44336f720585840840b1954571778d7a82fb17b7dcfe237b754e9e9d45",
+      "tensor_index": 4052,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 10,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "6706af24be175907ab44970927b63f7c890179fd3bbccf15777852919f780a07",
+      "tensor_index": 2220,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 359,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "b582ef8d04dec081fc1ad7a88ac139db9a1a98d03f4c20d6162a3ffd1e43dd3b",
+      "tensor_index": 2443,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 347,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "91e3ffcdd309a898a967c772330fa276e51cd9128102bb394932029b30c1dec9",
+      "tensor_index": 63,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 65,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "f8685170db91676271fe773e58c174e4a98de39b6b6cd70b8b7d47a893a48537",
+      "tensor_index": 1984,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 26,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "58747ea112373970e85ed8f0fd0fbd4bd00f987d0ae1ac4f87e68ad4d4cbfb80",
+      "tensor_index": 3562,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 302,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "7d17f4fffa48072560e841ef427d7a7405899a2ffe69956e3cae53f3d7ef01b2",
+      "tensor_index": 789,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 8,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "f2cdc06cccd4f5cd90fddc2016e211af164fe467ea41cdfdbe9c75a3b8f672b9",
+      "tensor_index": 6028,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 118,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/dos",
+      "sample_id": "9bbd8f65948ed5a3c7830881e91244128dc11a5c89a416c2e9e51bb1dae77453",
+      "tensor_index": 787,
+      "label": 1,
+      "family": "dos",
+      "final_packets": 10,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "85da7b05664e0fb47b97dbd53f59459d76cbe6a3b5f99df99abcf563fe5bf52b",
+      "tensor_index": 416,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 619,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "0c93acc731117133df848bc08bf47ba6eaeb1647376f1276a0a6fb008e164116",
+      "tensor_index": 1902,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 256,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "cbac7843a8193dd98f0529ca07aadd96ddc306f9d731ae40779eef7bb93f2463",
+      "tensor_index": 5673,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 75,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "886457ff5814e267b22b5c35dbddd598d66169616e1e8de8bd1f64693a68ce12",
+      "tensor_index": 4059,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 7,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "b9f39c413198582027acbb053afc18d71f93f3024602309e3e0e5b52fed0eb56",
+      "tensor_index": 2585,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 89,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "b3ff8d91b24023212a31ccf6ef5a825f5c7e750c19a6ba28b22630a4d27daef5",
+      "tensor_index": 4943,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 436,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "034ea1443ab7b2247dbc6a30374e3b60127be470a4a8c6ee2977a110ca206f19",
+      "tensor_index": 4048,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 1,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/dos",
+      "sample_id": "4e9c4a3ba425604e4bc0d95b7073c1b9f3f78b238aad5255fe446acce2ebd6a0",
+      "tensor_index": 786,
+      "label": 1,
+      "family": "dos",
+      "final_packets": 12,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "f1f5f0f15525bcc830c44d5fc00f66596b248f7b30183e893a67935c1c5faf02",
+      "tensor_index": 2196,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 532,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "5ea5d14db8f37d962bd7ada63ce7617b226f821c21eac5d83007d12a63700f04",
+      "tensor_index": 4046,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 9,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "d160dbb923a1fa4eda8271f2b7867a59600fa1d435e45548d42f9fd410eb915c",
+      "tensor_index": 471,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 437,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "accb31bfa7926acb4396ab21fb3c2f40e6d5db014542677db925ccef878a7e4e",
+      "tensor_index": 4055,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 116,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "d34fc7d920b4435043f2330ab176b34331b98db861451691ed5a11f091744c37",
+      "tensor_index": 4056,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 105,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "c29b2b65e9996454e95dbea1d3941012c78f96f722e29eb82e0596161186c9a4",
+      "tensor_index": 2314,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 393,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "324d58622f7e773d9f6324d3140898e66aa8128c5096e40c3fb0983b1b7eba7b",
+      "tensor_index": 533,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 2,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "22366fea1d0a9ba84bc4b7996dfd69dfbbba92d2f4b06455f4cb1e21ba616aa5",
+      "tensor_index": 957,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 49,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "8e588d798ec2899e97ae11309f60285c23e9675720612f5f6bbea23b3252bfc9",
+      "tensor_index": 4410,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 339,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/dos",
+      "sample_id": "0f04a17155d62809ac54ff7bb41fd8034664d4edad9d216b478363bdf4a65604",
+      "tensor_index": 785,
+      "label": 1,
+      "family": "dos",
+      "final_packets": 1,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "5a9f4d8440ed8741d51e395a535456ebe05d26e07dfbf63a9c55ce11e1e76aaf",
+      "tensor_index": 4057,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 12,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "e59857519078075113a8453f35a86b1939cf37b0e2ac6b3eed5dabc5f0d5e5da",
+      "tensor_index": 6250,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 308,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "70e86990953c9b696ceeb5648a65d87824d78622deb8ad9e8b58e8e7217eaf55",
+      "tensor_index": 788,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 11,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "38937e50e38a7a158945af3ec39859d3463437cd7bd199a410423386df254eb1",
+      "tensor_index": 1323,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 18,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "9b0475c91cf90a0b3a5c892810a5b2cf617c4051799d69b6deedc7819b2fbd1b",
+      "tensor_index": 4730,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 324,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "48724b0316dedaa93027bfff8d898cb4354469c544f322db16c12a02c8540ed4",
+      "tensor_index": 2088,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 293,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "9898fc6f19ad78a2b45ac312d40ff5f6485bb4ee7ea7e9aae80ba35a40c4f59c",
+      "tensor_index": 5916,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 176,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "747b5d78b676902d47ccd68a995c552fa875e835ff9c4968d07dfa3684c5b261",
+      "tensor_index": 5782,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 50,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "27b499032aa2e4d545f884f8c51ed3bba50ae870a80174e42eede58079ac1746",
+      "tensor_index": 2668,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 323,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "1044ab400900118ff859d16ca3dccc0c948cb2b154ef11691b99c5c0d5ba7c54",
+      "tensor_index": 2947,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 69,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/dos",
+      "sample_id": "41b3c86ded57d9145f9f9340a22e5e859a32d043224364c5ea7ec66ae66fdddf",
+      "tensor_index": 4061,
+      "label": 1,
+      "family": "dos",
+      "final_packets": 16,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "5ab1da659c542b3fc158f25fcb2c06ed798a8b67bcfa7d76911a0e2ab1c2f521",
+      "tensor_index": 4262,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 311,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "22d0445d870b8099293c289e711c0af47d9a5d64ad04261fd9709a0c0311b57b",
+      "tensor_index": 2039,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 11,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "b4fcb307a38f199fbe7456c9f36c8d739643ee5ed17f570023d9e35790911773",
+      "tensor_index": 879,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 437,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "80e9804c99615196f3029b3d820acc68bb5a4dee5f39f9d6c4d87a2de013154f",
+      "tensor_index": 3173,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 305,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "fa176eb7b0a85cbc28a144f01606850fa5051a85a53dbc261224671be426a21f",
+      "tensor_index": 790,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 114,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "00e6be2dc051a6a6cdf259e7acd6d89c81d326441a566808b2da2720732e12fa",
+      "tensor_index": 6416,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 314,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "70da7cec1faed0af2e5f2297d060185b4c4c208ad4c0657e72ed0a547615355b",
+      "tensor_index": 265,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 65,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "ac304f329e5adaa525022b3a3a0de5966195485f79368dbba4e85640f26bcbe5",
+      "tensor_index": 3607,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 515,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "986353d3f49139ddd0660e36ba1253a4fa52d2069eab7153b934609384a641d0",
+      "tensor_index": 4047,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 10,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "1d9d5618d57066256e053d001d0b3d2b7a9532da362120654683994567fe13ac",
+      "tensor_index": 4060,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 8,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "c441f8b57be362c14182f8cfd80acbcbed1ed87689a934a9dba378a420a2c36e",
+      "tensor_index": 4425,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 296,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "45514e94bf89055b64354f0cad3e06921058dda69cf34daa87098388c167e317",
+      "tensor_index": 1283,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 84,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "97fe6563758aa8d8d3fb2efc3c0d78d17c4b4ba3d611160f0d00b70fc9339fc0",
+      "tensor_index": 5823,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 23,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "daa49e887122ce38a5f9702d223acd0289619e3a112577e1e2ef1d4afc36c6b7",
+      "tensor_index": 2908,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 4,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "84dc999d69059c3b51508b8b13d21393fa59274827f0eed3650cfe403d98b1ca",
+      "tensor_index": 4349,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 56,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "9df8e9b8e4e98a98dac9e570809f3a399978cb1a52eec4ac1c55df26597a9f6d",
+      "tensor_index": 5695,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 485,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "f6e5f6f7b00d540870c63384c4ead588d9a393536e8700ad26488c0be064db13",
+      "tensor_index": 1240,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 345,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "4331e69eb21f2242f5eac8faa5422a00bd712418696543777a054909938e43e1",
+      "tensor_index": 2133,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 219,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "01c65164c6d4d15e1397f8e41b8ddaadb9f6c1722e0d24908e2863b1f9dedacd",
+      "tensor_index": 3079,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 397,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "f11bb8179e62fa4f839a49e331a61518a0518ff5e48e1957724dfce340afbddf",
+      "tensor_index": 3669,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 12,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "401986e25ff62862311e8d908b3be5b0d13b25d7df3239ae408f35bc362145ad",
+      "tensor_index": 3599,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 108,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/reconnaissance",
+      "sample_id": "4b199d8ba98b85572de1a57d7becbfa8168d038a7e9b2e82dd39c1155e45aa8e",
+      "tensor_index": 4049,
+      "label": 1,
+      "family": "reconnaissance",
+      "final_packets": 1,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "48bc9a9bcfc66eaca60d119d455acca206408b2e2cc061078069a60199a5eb5b",
+      "tensor_index": 2339,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 437,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "5252c797044645abb70a5e4e331b794513bf5d8a5a28d84d3cd274c2e35dd48e",
+      "tensor_index": 4876,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 302,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_burst",
+      "sample_id": "ae9b44b0dbc43722c7d312223b5c5f4ddf4d455ac0057c86748754ae176a392e",
+      "tensor_index": 5657,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 321,
+      "role": "train"
+    },
+    {
+      "stratum": "benign_other",
+      "sample_id": "5ae45000782fc2f47b983646c8b124d4e8c0d3c81a5a98f011bdb1947f3c6cb8",
+      "tensor_index": 3491,
+      "label": 0,
+      "family": "benign",
+      "final_packets": 16,
+      "role": "train"
+    },
+    {
+      "stratum": "attack/dos",
+      "sample_id": "c80c871bec6e4e6671e09b864ac9587e0582f92c32ec39e57248e1a1e4ab4046",
+      "tensor_index": 4050,
+      "label": 1,
+      "family": "dos",
+      "final_packets": 20,
+      "role": "train"
+    }
+  ],
+  "absent_required_strata": [
+    "idle"
+  ],
+  "representative": false,
+  "idle_rule": "eligible benign final second with zero incoming plus outgoing packets",
+  "fully_idle_benign_histories": 0,
+  "benign_histories_with_any_idle_second": 0,
+  "burst_rule": "active benign final second at or above training benign p90 (higher)",
+  "burst_min_packets": 289.0
+}

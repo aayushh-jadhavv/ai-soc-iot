@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "replayed_models": 14,
+  "references_per_model": 966,
+  "calibration_ids_reproduced": true,
+  "all_logits_scores_decisions_metrics_exact": true,
+  "input_and_output_hashes_verified": true,
+  "seconds": 27.844518730000004
+}

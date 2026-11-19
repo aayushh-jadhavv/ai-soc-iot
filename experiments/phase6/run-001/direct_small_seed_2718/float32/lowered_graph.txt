@@ -1,0 +1,10 @@
+graph():
+    %x : [num_users=1] = placeholder[target=x]
+    %lowered_module_0 : [num_users=1] = get_attr[target=lowered_module_0]
+    %executorch_call_delegate : [num_users=1] = call_function[target=torch.ops.higher_order.executorch_call_delegate](args = (%lowered_module_0, %x), kwargs = {})
+    %getitem_1 : [num_users=1] = call_function[target=operator.getitem](args = (%executorch_call_delegate, 0), kwargs = {})
+    %aten_mean_dim : [num_users=1] = call_function[target=executorch.exir.dialects.edge._ops.aten.mean.dim](args = (%getitem_1, [2]), kwargs = {})
+    %lowered_module_1 : [num_users=1] = get_attr[target=lowered_module_1]
+    %executorch_call_delegate_1 : [num_users=1] = call_function[target=torch.ops.higher_order.executorch_call_delegate](args = (%lowered_module_1, %aten_mean_dim), kwargs = {})
+    %getitem : [num_users=1] = call_function[target=operator.getitem](args = (%executorch_call_delegate_1, 0), kwargs = {})
+    return (getitem,)
