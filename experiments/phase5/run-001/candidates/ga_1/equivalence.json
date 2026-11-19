@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "comparison": "abs(compact - masked) <= atol + rtol * abs(masked)",
+  "checks": [
+    {
+      "fixture": "real_development",
+      "batch_size": 1,
+      "samples": 965,
+      "passed": true,
+      "finite": true,
+      "max_absolute_error": 1.9073486328125e-06,
+      "max_error_to_tolerance": 0.020630714785360726,
+      "threshold_crossings": 0,
+      "reference_sha256": "e69cc9eeaa6d3d81ceef0852c01d8728c3eb7018b601be4f93feefd30f863347",
+      "compact_sha256": "f7406ea230303af7b1a411e2aa996e06182cc501fe51105f44307a38226b462c",
+      "input_sha256": "4129c03487cdf159610c13fae061159e71d8125eee55afd504d83a8355ae6cf3"
+    },
+    {
+      "fixture": "real_development",
+      "batch_size": 1024,
+      "samples": 965,
+      "passed": true,
+      "finite": true,
+      "max_absolute_error": 1.9073486328125e-06,
+      "max_error_to_tolerance": 0.029305970439907722,
+      "threshold_crossings": 0,
+      "reference_sha256": "652134b7f46e422b9c8065c2b53003c4842dc898a2542f9edcccfd9d13af35e2",
+      "compact_sha256": "315460d75663bf5173aebac25ee99b493ae58f6b9794703c24104bb7c5b3da1b",
+      "input_sha256": "4129c03487cdf159610c13fae061159e71d8125eee55afd504d83a8355ae6cf3"
+    },
+    {
+      "fixture": "synthetic",
+      "batch_size": 1,
+      "samples": 291,
+      "passed": true,
+      "finite": true,
+      "max_absolute_error": 4.76837158203125e-07,
+      "max_error_to_tolerance": 0.019529446196268313,
+      "threshold_crossings": 0,
+      "reference_sha256": "c5e3d39894dea6ae127470544f3b906023ac6c0912935dfc90b4725dbc53a078",
+      "compact_sha256": "8b6df367d9b813e83c39ba2fd752c139b5fa1ac7f5cce35b86bf0da90e1286b4",
+      "input_sha256": "2285dd6037bd26628665379ecfb78b402796c32092d9446bbd22ca235f6d5fb6"
+    },
+    {
+      "fixture": "synthetic",
+      "batch_size": 1024,
+      "samples": 291,
+      "passed": true,
+      "finite": true,
+      "max_absolute_error": 4.76837158203125e-07,
+      "max_error_to_tolerance": 0.020479503406447955,
+      "threshold_crossings": 0,
+      "reference_sha256": "3265c95d311f77442c9b813895d4b64bcfebbcec34220b8c19ace64b15bb4655",
+      "compact_sha256": "b0a51215c93873270f31f154dd0f9131d916d6a64848501147ce0723ff4c6a4a",
+      "input_sha256": "2285dd6037bd26628665379ecfb78b402796c32092d9446bbd22ca235f6d5fb6"
+    }
+  ]
+}

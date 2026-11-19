@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "frozen_models_replayed": 7,
+  "compact_preflight_replayed": 3,
+  "selected": "ga_3",
+  "exact_metrics_and_predictions": true,
+  "artifacts_and_input_hashes_verified": true,
+  "protected_outcomes_accessed": false,
+  "training_performed": false,
+  "seconds": 2.0073009000043385,
+  "cpu_seconds": 1.578125
+}

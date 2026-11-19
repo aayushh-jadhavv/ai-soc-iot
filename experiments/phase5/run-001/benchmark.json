@@ -1,0 +1,216 @@
+{
+  "seconds": 4.92384740000125,
+  "cpu_seconds": 4.734375,
+  "models": {
+    "ga_1": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 203300.0,
+          "p95_ns": 275100.0,
+          "mean_ns": 197927.1,
+          "sampled_rss_bytes": 358432768
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 224600.0,
+          "p95_ns": 311634.99999999977,
+          "mean_ns": 216845.5,
+          "sampled_rss_bytes": 359976960
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 222000.0,
+          "p95_ns": 415530.0,
+          "mean_ns": 252326.2,
+          "sampled_rss_bytes": 361467904
+        }
+      ],
+      "median_of_repeat_medians_ns": 222000.0,
+      "median_of_repeat_p95_ns": 311634.99999999977
+    },
+    "ga_2": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 139000.0,
+          "p95_ns": 242100.0,
+          "mean_ns": 165372.7,
+          "sampled_rss_bytes": 358678528
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 150500.0,
+          "p95_ns": 285244.99999999994,
+          "mean_ns": 189921.8,
+          "sampled_rss_bytes": 360300544
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 141250.0,
+          "p95_ns": 274410.0,
+          "mean_ns": 168582.4,
+          "sampled_rss_bytes": 361721856
+        }
+      ],
+      "median_of_repeat_medians_ns": 141250.0,
+      "median_of_repeat_p95_ns": 274410.0
+    },
+    "ga_3": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 139600.0,
+          "p95_ns": 295519.9999999999,
+          "mean_ns": 169580.3,
+          "sampled_rss_bytes": 358936576
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 139900.0,
+          "p95_ns": 265469.99999999994,
+          "mean_ns": 171911.1,
+          "sampled_rss_bytes": 360562688
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 214850.0,
+          "p95_ns": 519569.99999999994,
+          "mean_ns": 253421.0,
+          "sampled_rss_bytes": 361979904
+        }
+      ],
+      "median_of_repeat_medians_ns": 139900.0,
+      "median_of_repeat_p95_ns": 295519.9999999999
+    },
+    "unpruned": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 152050.0,
+          "p95_ns": 288574.99999999994,
+          "mean_ns": 194473.3,
+          "sampled_rss_bytes": 359206912
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 219700.0,
+          "p95_ns": 335149.99999999994,
+          "mean_ns": 233250.0,
+          "sampled_rss_bytes": 360796160
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 179850.0,
+          "p95_ns": 351354.99999999994,
+          "mean_ns": 217050.7,
+          "sampled_rss_bytes": 362225664
+        }
+      ],
+      "median_of_repeat_medians_ns": 179850.0,
+      "median_of_repeat_p95_ns": 335149.99999999994
+    },
+    "direct_small_seed_1729": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 224300.0,
+          "p95_ns": 272315.0,
+          "mean_ns": 222453.4,
+          "sampled_rss_bytes": 360472576
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 221300.0,
+          "p95_ns": 424030.0,
+          "mean_ns": 239313.7,
+          "sampled_rss_bytes": 360873984
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 187500.0,
+          "p95_ns": 249129.99999999988,
+          "mean_ns": 194816.8,
+          "sampled_rss_bytes": 362491904
+        }
+      ],
+      "median_of_repeat_medians_ns": 221300.0,
+      "median_of_repeat_p95_ns": 272315.0
+    },
+    "direct_small_seed_2718": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 225450.0,
+          "p95_ns": 484939.99999999977,
+          "mean_ns": 248523.1,
+          "sampled_rss_bytes": 360714240
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 142950.0,
+          "p95_ns": 291694.99999999994,
+          "mean_ns": 186675.7,
+          "sampled_rss_bytes": 359456768
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 221700.0,
+          "p95_ns": 340154.9999999999,
+          "mean_ns": 243678.3,
+          "sampled_rss_bytes": 362737664
+        }
+      ],
+      "median_of_repeat_medians_ns": 221700.0,
+      "median_of_repeat_p95_ns": 340154.9999999999
+    },
+    "direct_small_seed_31415": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "calls": 1000,
+          "median_ns": 154700.0,
+          "p95_ns": 312614.9999999998,
+          "mean_ns": 191819.9,
+          "sampled_rss_bytes": 360955904
+        },
+        {
+          "repeat": 2,
+          "calls": 1000,
+          "median_ns": 154550.0,
+          "p95_ns": 280620.0,
+          "mean_ns": 195583.2,
+          "sampled_rss_bytes": 359718912
+        },
+        {
+          "repeat": 3,
+          "calls": 1000,
+          "median_ns": 139900.0,
+          "p95_ns": 238905.0,
+          "mean_ns": 161838.6,
+          "sampled_rss_bytes": 361123840
+        }
+      ],
+      "median_of_repeat_medians_ns": 154550.0,
+      "median_of_repeat_p95_ns": 280620.0
+    }
+  }
+}

@@ -30,3 +30,16 @@ The registered threshold reserve and internal/external test outcomes stay locked
 [Phase 3 training and handoff](docs/phase3.md)
 · [Development results](experiments/phase3/run-002/REPORT.md)
 · [Selected baseline package](experiments/phase3/run-002/baseline_package/handoff.json)
+
+Phase 4 runs a bounded genetic search over 64/32 hidden-output masks using only
+the frozen development subset. It preserves the baseline, candidate cache,
+generation history and exact resume state; compaction and fine-tuning are deferred.
+[Phase 4 implementation and reproduction](docs/phase4.md)
+· [Search results and retention trade-offs](experiments/phase4/run-001/REPORT.md)
+
+Phase 5 rebuilds the three leading masks as physical smaller networks, checks
+masked-parent logit equivalence before training, fine-tunes for up to five epochs
+and applies the fixed development recall/macro-F1 loss gates. It preserves the
+unpruned and direct-small comparisons and freezes architectures for later export.
+[Phase 5 implementation and reproduction](docs/phase5.md)
+· [Compaction and fine-tuning results](experiments/phase5/run-001/REPORT.md)

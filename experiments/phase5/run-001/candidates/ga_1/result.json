@@ -1,0 +1,291 @@
+{
+  "id": "ga_1",
+  "kind": "ga",
+  "mask": "0011111101010101100001110000000001000010111101101000010110000000:00110000000101001110110100101101",
+  "pre": {
+    "sample_count": 965,
+    "attack_count": 1,
+    "benign_count": 964,
+    "attack_prevalence": 0.0010362694300518134,
+    "threshold": 0.5,
+    "tn": 964,
+    "fp": 0,
+    "fn": 0,
+    "tp": 1,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "attack_f1": 1.0,
+    "benign_f1": 1.0,
+    "macro_f1": 1.0,
+    "pr_auc": 1.0,
+    "pr_auc_method": "noninterpolated_average_precision_ties_grouped",
+    "per_family": {
+      "benign": {
+        "support": 964,
+        "independent_source_groups": 1,
+        "detected": 0,
+        "detection_rate": 0.0,
+        "binary_vs_benign": null
+      },
+      "dos": {
+        "support": 0,
+        "independent_source_groups": 0,
+        "detected": null,
+        "detection_rate": null,
+        "binary_vs_benign": null
+      },
+      "reconnaissance": {
+        "support": 1,
+        "independent_source_groups": 1,
+        "detected": 1,
+        "detection_rate": 1.0,
+        "binary_vs_benign": {
+          "sample_count": 965,
+          "attack_count": 1,
+          "benign_count": 964,
+          "attack_prevalence": 0.0010362694300518134,
+          "threshold": 0.5,
+          "tn": 964,
+          "fp": 0,
+          "fn": 0,
+          "tp": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "false_positive_rate": 0.0,
+          "attack_f1": 1.0,
+          "benign_f1": 1.0,
+          "macro_f1": 1.0,
+          "pr_auc": 1.0,
+          "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+        }
+      }
+    },
+    "per_group": {
+      "unsw-jan22-source-group": {
+        "sample_count": 965,
+        "attack_count": 1,
+        "benign_count": 964,
+        "attack_prevalence": 0.0010362694300518134,
+        "threshold": 0.5,
+        "tn": 964,
+        "fp": 0,
+        "fn": 0,
+        "tp": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "attack_f1": 1.0,
+        "benign_f1": 1.0,
+        "macro_f1": 1.0,
+        "pr_auc": 1.0,
+        "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+      }
+    },
+    "loss": 0.0775393471121788
+  },
+  "post": {
+    "sample_count": 965,
+    "attack_count": 1,
+    "benign_count": 964,
+    "attack_prevalence": 0.0010362694300518134,
+    "threshold": 0.5,
+    "tn": 962,
+    "fp": 2,
+    "fn": 0,
+    "tp": 1,
+    "precision": 0.3333333333333333,
+    "recall": 1.0,
+    "false_positive_rate": 0.002074688796680498,
+    "attack_f1": 0.5,
+    "benign_f1": 0.9989615784008308,
+    "macro_f1": 0.7494807892004154,
+    "pr_auc": 1.0,
+    "pr_auc_method": "noninterpolated_average_precision_ties_grouped",
+    "per_family": {
+      "benign": {
+        "support": 964,
+        "independent_source_groups": 1,
+        "detected": 2,
+        "detection_rate": 0.002074688796680498,
+        "binary_vs_benign": null
+      },
+      "dos": {
+        "support": 0,
+        "independent_source_groups": 0,
+        "detected": null,
+        "detection_rate": null,
+        "binary_vs_benign": null
+      },
+      "reconnaissance": {
+        "support": 1,
+        "independent_source_groups": 1,
+        "detected": 1,
+        "detection_rate": 1.0,
+        "binary_vs_benign": {
+          "sample_count": 965,
+          "attack_count": 1,
+          "benign_count": 964,
+          "attack_prevalence": 0.0010362694300518134,
+          "threshold": 0.5,
+          "tn": 962,
+          "fp": 2,
+          "fn": 0,
+          "tp": 1,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "false_positive_rate": 0.002074688796680498,
+          "attack_f1": 0.5,
+          "benign_f1": 0.9989615784008308,
+          "macro_f1": 0.7494807892004154,
+          "pr_auc": 1.0,
+          "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+        }
+      }
+    },
+    "per_group": {
+      "unsw-jan22-source-group": {
+        "sample_count": 965,
+        "attack_count": 1,
+        "benign_count": 964,
+        "attack_prevalence": 0.0010362694300518134,
+        "threshold": 0.5,
+        "tn": 962,
+        "fp": 2,
+        "fn": 0,
+        "tp": 1,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "false_positive_rate": 0.002074688796680498,
+        "attack_f1": 0.5,
+        "benign_f1": 0.9989615784008308,
+        "macro_f1": 0.7494807892004154,
+        "pr_auc": 1.0,
+        "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+      }
+    },
+    "loss": 0.0720941573381424
+  },
+  "pre_gate": {
+    "accepted": true,
+    "absolute_losses": {
+      "recall": 0.0,
+      "macro_f1": -0.35844290914493726
+    },
+    "failed_metrics": [],
+    "recall_loss_limit": 0.02,
+    "macro_f1_loss_limit": 0.02
+  },
+  "gate": {
+    "accepted": true,
+    "absolute_losses": {
+      "recall": 0.0,
+      "macro_f1": -0.10792369834535265
+    },
+    "failed_metrics": [],
+    "recall_loss_limit": 0.02,
+    "macro_f1_loss_limit": 0.02
+  },
+  "best_epoch": 1,
+  "terminal": {
+    "sample_count": 965,
+    "attack_count": 1,
+    "benign_count": 964,
+    "attack_prevalence": 0.0010362694300518134,
+    "threshold": 0.5,
+    "tn": 959,
+    "fp": 5,
+    "fn": 0,
+    "tp": 1,
+    "precision": 0.16666666666666666,
+    "recall": 1.0,
+    "false_positive_rate": 0.005186721991701245,
+    "attack_f1": 0.2857142857142857,
+    "benign_f1": 0.9973998959958398,
+    "macro_f1": 0.6415570908550627,
+    "pr_auc": 1.0,
+    "pr_auc_method": "noninterpolated_average_precision_ties_grouped",
+    "per_family": {
+      "benign": {
+        "support": 964,
+        "independent_source_groups": 1,
+        "detected": 5,
+        "detection_rate": 0.005186721991701245,
+        "binary_vs_benign": null
+      },
+      "dos": {
+        "support": 0,
+        "independent_source_groups": 0,
+        "detected": null,
+        "detection_rate": null,
+        "binary_vs_benign": null
+      },
+      "reconnaissance": {
+        "support": 1,
+        "independent_source_groups": 1,
+        "detected": 1,
+        "detection_rate": 1.0,
+        "binary_vs_benign": {
+          "sample_count": 965,
+          "attack_count": 1,
+          "benign_count": 964,
+          "attack_prevalence": 0.0010362694300518134,
+          "threshold": 0.5,
+          "tn": 959,
+          "fp": 5,
+          "fn": 0,
+          "tp": 1,
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "false_positive_rate": 0.005186721991701245,
+          "attack_f1": 0.2857142857142857,
+          "benign_f1": 0.9973998959958398,
+          "macro_f1": 0.6415570908550627,
+          "pr_auc": 1.0,
+          "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+        }
+      }
+    },
+    "per_group": {
+      "unsw-jan22-source-group": {
+        "sample_count": 965,
+        "attack_count": 1,
+        "benign_count": 964,
+        "attack_prevalence": 0.0010362694300518134,
+        "threshold": 0.5,
+        "tn": 959,
+        "fp": 5,
+        "fn": 0,
+        "tp": 1,
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "false_positive_rate": 0.005186721991701245,
+        "attack_f1": 0.2857142857142857,
+        "benign_f1": 0.9973998959958398,
+        "macro_f1": 0.6415570908550627,
+        "pr_auc": 1.0,
+        "pr_auc_method": "noninterpolated_average_precision_ties_grouped"
+      }
+    },
+    "loss": 0.06583137065172195
+  },
+  "cost": {
+    "parameters": 2395,
+    "tensor_bytes": 9580,
+    "conv_linear_macs_per_sample": 18734,
+    "mac_scope": "analytical dense Conv1d/Linear only; excludes bias, ReLU and mean",
+    "channels": [
+      26,
+      14
+    ]
+  },
+  "epochs_completed": 5,
+  "training_cost": {
+    "optimizer_steps": 255,
+    "train_seconds": 1.5776716000109445,
+    "train_cpu_seconds": 1.546875,
+    "epoch_seconds": 1.6507093000109307,
+    "epoch_cpu_seconds": 1.59375,
+    "sampled_rss_max_bytes": 360718336
+  }
+}

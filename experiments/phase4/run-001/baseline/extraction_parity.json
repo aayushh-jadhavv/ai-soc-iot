@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "evidence_sha256": "a789d7448cb9de41040e77044b1ba5a0f350a578141fd5710c44243ca3d55bd2",
+  "fixture_sha256": "c44ae05aa3bc78800f22b800a599e9072c38016ea1fa84a85b5f4fb4a37abdef",
+  "independent_decoder": "Wireshark ledger from Phase 2",
+  "offline_live_and_saved_training_equal": true,
+  "units": "IPv4 bytes; within-second IAT milliseconds",
+  "population_moments": true
+}

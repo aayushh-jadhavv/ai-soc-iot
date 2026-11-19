@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "candidates": [
+    "ga_1",
+    "ga_2",
+    "ga_3"
+  ],
+  "training_steps": 0,
+  "all_checks_before_training": true
+}

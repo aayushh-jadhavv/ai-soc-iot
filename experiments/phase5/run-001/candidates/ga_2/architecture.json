@@ -1,0 +1,47 @@
+{
+  "version": "phase5_architecture_v1",
+  "kind": "temporal_cnn",
+  "input_shape": [
+    1,
+    16,
+    8
+  ],
+  "channels": [
+    27,
+    15
+  ],
+  "kernel_size": 3,
+  "stride": 1,
+  "padding": 1,
+  "bias": true,
+  "activation": "ReLU",
+  "pooling": "global temporal mean",
+  "output": "binary logit",
+  "dtype": "float32",
+  "masks": false,
+  "state_shapes": {
+    "conv1.weight": [
+      27,
+      16,
+      3
+    ],
+    "conv1.bias": [
+      27
+    ],
+    "conv2.weight": [
+      15,
+      27,
+      3
+    ],
+    "conv2.bias": [
+      15
+    ],
+    "output.weight": [
+      1,
+      15
+    ],
+    "output.bias": [
+      1
+    ]
+  }
+}

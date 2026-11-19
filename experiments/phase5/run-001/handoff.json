@@ -1,0 +1,73 @@
+{
+  "version": "phase5_export_handoff_v1",
+  "selected": "ga_3",
+  "selected_directory": "frozen/ga_3",
+  "comparison_directories": [
+    "frozen/unpruned",
+    "frozen/direct_small_seed_1729",
+    "frozen/direct_small_seed_2718",
+    "frozen/direct_small_seed_31415",
+    "frozen/ga_1",
+    "frozen/ga_2",
+    "frozen/ga_3"
+  ],
+  "architectures_frozen": true,
+  "selected_architecture": {
+    "version": "phase5_architecture_v1",
+    "kind": "temporal_cnn",
+    "input_shape": [
+      1,
+      16,
+      8
+    ],
+    "channels": [
+      25,
+      15
+    ],
+    "kernel_size": 3,
+    "stride": 1,
+    "padding": 1,
+    "bias": true,
+    "activation": "ReLU",
+    "pooling": "global temporal mean",
+    "output": "binary logit",
+    "dtype": "float32",
+    "masks": false,
+    "state_shapes": {
+      "conv1.weight": [
+        25,
+        16,
+        3
+      ],
+      "conv1.bias": [
+        25
+      ],
+      "conv2.weight": [
+        15,
+        25,
+        3
+      ],
+      "conv2.bias": [
+        15
+      ],
+      "output.weight": [
+        1,
+        15
+      ],
+      "output.bias": [
+        1
+      ]
+    }
+  },
+  "selected_state_dict_sha256": "7e195483a0ced9a9d8d173a420f353aa089802f150c38cb99764045286d1bd56",
+  "registration_sha256": "b63c6f773b2e1db0f9a3af1eda8160ebd6da66f0b89f864a7772e6a475e72de0",
+  "shared_artifacts": {
+    "feature_schema.json": "a9f58e491e656a65c2f924e2c9e6add8e6b4ad4294a38aebebcf7c77c745f459",
+    "preprocess.json": "59e7b2667228141d96095f1a878675659c2c302a2a2dc428c94e0b15603c5a9c",
+    "split_manifest.json": "2c10ebe392ad56cc6a43f0336b3b75342522be439afa0de2439be40d1a638004"
+  },
+  "final_threshold": null,
+  "calibration": "deferred",
+  "exported": false,
+  "deployment_ready": false
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "all_ones_exact": true,
+  "phase3_prediction_replay_exact": true,
+  "validation_samples": 965,
+  "additional_forward_passes": 2,
+  "seconds": 0.08798699999897508,
+  "cpu_seconds": 0.0625
+}

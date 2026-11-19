@@ -1,0 +1,7 @@
+{
+  "maximum_candidate_requests": 320,
+  "maximum_unique_inferences": 290,
+  "measured_baseline_seconds": 0.031191499998385552,
+  "estimated_remaining_inference_seconds_with_50pct_allowance": 13.521515249300137,
+  "basis": "first all-ones evaluation; excludes persistence, setup and verification"
+}

@@ -1,0 +1,6 @@
+{
+  "architecture.json": "49150c6969d395b09c4f6a7727b8ffd706ee5ea76135bd31826a03578fca160f",
+  "channel_map.json": "eea0376ad65fcc65fb420fe2e53d117467a21675111ce9aec25ec957c1357269",
+  "handoff.json": "439bd0c9f0d72071d9b56ebc59e088fde5ba065f795082763dfe66196df4fa25",
+  "weights.pt": "45bd888f301b3cb6dd19fae3b96f9619f04d4fbf4d313b29a0a5003203be4d57"
+}
