@@ -50,3 +50,8 @@ operator precision and VM latency. The selected `ga_3` handoff uses float32.
 [Phase 6 reproduction](docs/phase6.md)
 · [Export and PTQ results](experiments/phase6/run-001/REPORT.md)
 · [Selected program and checksum](experiments/phase6/run-001/handoff.json)
+
+Phase 7 packages the selected model as `cnn-unsw-ga-v1` and serves authenticated
+loopback predictions to the gateway. The Raspberry Pi 3+ startup guide includes
+credential provisioning and a replay of the teammate's captured eight windows.
+[Phase 7 worker and board handoff](docs/phase7.md)

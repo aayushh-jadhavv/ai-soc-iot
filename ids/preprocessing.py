@@ -27,8 +27,12 @@ class Preprocessor:
             raise ValueError("Invalid preprocessing parameters")
 
     def transform(self, request, *, model_id):
-        import torch  # Data extraction/fitting does not require the training runtime.
         validate_for_inference(request, model_id)
+        return self.transform_validated(request)
+
+    def transform_validated(self, request):
+        """Transform a request already checked by the inference boundary."""
+        import torch
         try:
             raw = np.asarray([w["values"] for w in request["windows"]], dtype=np.float64)
             result = self.transform_array(raw[None])

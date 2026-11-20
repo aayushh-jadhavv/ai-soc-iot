@@ -56,6 +56,11 @@ def _finite(value):
             _finite(v)
 
 
+def _window_interval(window):
+    if window["window_start_ms"] % 1000 or window["window_end_ms"] - window["window_start_ms"] != 1000:
+        raise ContractError("INVALID_INPUT", "Windows must be aligned one-second intervals")
+
+
 def validate(kind, value):
     _finite(value)
     if kind == "FeatureSequence" and isinstance(value, dict) and isinstance(value.get("windows"), list):
@@ -71,14 +76,14 @@ def validate(kind, value):
     if errors:
         raise ContractError("INVALID_INPUT", errors[0].message)
     if kind == "FeatureWindow":
-        if value["window_start_ms"] % 1000 or value["window_end_ms"] - value["window_start_ms"] != 1000:
-            raise ContractError("INVALID_INPUT", "Windows must be aligned one-second intervals")
+        _window_interval(value)
     elif kind == "FeatureSequence":
         windows = value["windows"]
         same = ("gateway_id", "boot_id", "capture_session_id", "device_id",
                 "binding_revision", "enforcement_revision", "feature_schema", "observed_mode", "schema_version")
         for w in windows:
-            validate("FeatureWindow", w)
+            # The sequence schema already validated every nested window via $ref.
+            _window_interval(w)
             if any(w[k] != windows[0][k] for k in same):
                 raise ContractError("HISTORY_DISCONTINUITY", "Identity/session/revision changed")
         if len({w["window_id"] for w in windows}) != 8:
@@ -91,6 +96,11 @@ def validate(kind, value):
 
 def validate_for_inference(value, model_id):
     validate("FeatureSequence", value)
+    return check_model_and_coverage(value, model_id)
+
+
+def check_model_and_coverage(value, model_id):
+    """Apply model and quality checks after structural validation."""
     if value["model_id"] != model_id:
         raise ContractError("MODEL_MISMATCH", "Requested model is not loaded")
     if any(not w["quality"]["valid"] for w in value["windows"]):
