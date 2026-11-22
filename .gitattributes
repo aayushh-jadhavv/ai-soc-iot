@@ -1,6 +1,17 @@
-# Preserve byte-level checksums of Linux exports and the byte-copied Phase 5 metadata.
-experiments/phase6/** -text
-models/phase7/** -text
-scripts/phase6/*.py text eol=lf
-scripts/review_phase6_crossings.py text eol=lf
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.svg text eol=lf
+*.pcap binary
+*.pte binary
+*.pt2 binary
+*.parquet binary
+*.gz binary
 evaluation/*.json text eol=lf
+
+# These payloads and audit inputs have published byte-level SHA-256 values.
+models/** -text
+evaluation/export/** -text
+evaluation/dataset-audit.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
+tests/fixtures/gateway-request.json -text

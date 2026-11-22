@@ -69,7 +69,7 @@ def determinism(seed):
 
 def implementation_hashes():
     paths = [*sorted((ROOT / "ids/training").glob("*.py")), ROOT / "ids/model.py",
-             ROOT / "ids/preprocessing.py", ROOT / "ids/run_logging.py", ROOT / "requirements-phase3.txt"]
+             ROOT / "ids/preprocessing.py", ROOT / "ids/run_logging.py", ROOT / "pyproject.toml", ROOT / "uv.lock"]
     return {p.relative_to(ROOT).as_posix(): sha256(p) for p in paths}
 
 

@@ -89,6 +89,32 @@ class FeatureTests(unittest.TestCase):
         ex.advance_to(1_002_200)
         self.assertEqual([w['values'][0] for w in self.rows], [1, 1])
 
+    def test_submillisecond_interarrival_matches_training_units(self):
+        ex = self.create()
+        for offset in (100_000, 350_000):
+            ex.add_packet(dict(record(1_000_100), event_time_ns=1_000_100_000_000 + offset))
+        ex.advance_to(1_001_100)
+        self.assertEqual(self.rows[0]['values'][14:], [0.25, 0.0])
+
+    def test_worker_restart_discards_old_and_partial_windows(self):
+        ex = self.create()
+        ex.add_packet(record(1_000_100))
+        ex.advance_to(1_008_100)
+        previous, = self.sequences
+        self.assertTrue(ex.is_current(previous, 1_008_100))
+        self.assertFalse(ex.is_current(previous, 1_009_100))
+        ex.reset_worker_history(1_008_500)
+        ex.add_packet(record(1_008_600))
+        self.assertFalse(ex.is_current(previous, 1_008_700))
+        ex.advance_to(1_016_100)
+        self.assertEqual(len(self.sequences), 1)
+        ex.advance_to(1_017_100)
+        new = self.sequences[1]
+        self.assertEqual(new['windows'][0]['window_start_ms'], 1_009_000)
+        self.assertTrue(ex.is_current(new, 1_017_100))
+        ex.mark_capture_loss()
+        self.assertFalse(ex.is_current(new, 1_017_100))
+
 
 if __name__ == '__main__':
     unittest.main()

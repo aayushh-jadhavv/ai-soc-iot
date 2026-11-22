@@ -1,4 +1,0 @@
-elapsed_ns,pid,role,cpu_percent_one_core,rss_bytes
-207535100,23780,worker,30.8,359817216
-412599200,23780,worker,92.4,359817216
-618769700,23780,worker,92.4,365645824

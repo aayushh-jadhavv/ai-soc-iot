@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ai-soc-ids"
 version = "0.1.0"
-description = "Phase 0 contracts and untrained temporal IDS export proof"
+description = "IPv4 gateway telemetry and a compact, observe-only temporal intrusion detection model"
+readme = "README.md"
 requires-python = "==3.12.*"
 dependencies = [
   "torch==2.9.0", "executorch==1.0.0", "numpy==2.2.6",
@@ -20,7 +21,7 @@ records = ["pyarrow==22.0.0"]
 include = ["ids*", "contracts*"]
 
 [tool.setuptools.package-data]
-contracts = ["v1/*.json", "fixtures/**/*.json"]
+contracts = ["openapi.json", "v1/*.json", "fixtures/*.json", "fixtures/**/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

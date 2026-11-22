@@ -6,7 +6,8 @@ from scapy.layers.l2 import ARP
 
 
 def parse_packet(pkt, registry):
-    ts_ms = int(float(getattr(pkt, 'time', time.time())) * 1000)
+    ts_ns = int(pkt.time * 1_000_000_000) if hasattr(pkt, 'time') else time.time_ns()
+    ts_ms = ts_ns // 1_000_000
     if pkt.haslayer(ARP):
         return []
     if pkt.haslayer(IPv6) and not pkt.haslayer(IP):
@@ -42,7 +43,7 @@ def parse_packet(pkt, registry):
     records = []
     for ip_addr, direction in affected:
         dev = registry.get_device(ip_addr)
-        record = {'event_time_ms': ts_ms, 'device_ip': ip_addr,
+        record = {'event_time_ms': ts_ms, 'event_time_ns': ts_ns, 'device_ip': ip_addr,
                   'device_id': dev['device_id'],
                   'binding_revision': dev['binding_revision'],
                   'identity_conflict': dev['conflict'],

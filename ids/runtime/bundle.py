@@ -127,17 +127,22 @@ class Bundle:
             raise ValueError("Warm-up reference score mismatch")
 
     def predict(self, request):
-        import torch
-
         tensor = self.processor.transform_validated(request)
-        with torch.inference_mode():
-            start = time.perf_counter_ns()
-            output, = self.method.execute((tensor,))
-            elapsed = (time.perf_counter_ns() - start) / 1e6
-            if output.shape != (1, 1) or output.dtype != torch.float32:
-                raise ValueError("Unexpected model output")
-            logit = output.item()
-        if not math.isfinite(logit):
-            raise ValueError("Nonfinite model output")
-        z = math.exp(-abs(logit))
-        return (1 / (1 + z) if logit >= 0 else z / (1 + z)), elapsed
+        return score_tensor(self.method, tensor)
+
+
+def score_tensor(method, tensor):
+    """Run one processed history through the deployed scoring path."""
+    import torch
+
+    with torch.inference_mode():
+        start = time.perf_counter_ns()
+        output, = method.execute((tensor,))
+        elapsed = (time.perf_counter_ns() - start) / 1e6
+        if output.shape != (1, 1) or output.dtype != torch.float32:
+            raise ValueError("Unexpected model output")
+        logit = output.item()
+    if not math.isfinite(logit):
+        raise ValueError("Nonfinite model output")
+    z = math.exp(-abs(logit))
+    return (1 / (1 + z) if logit >= 0 else z / (1 + z)), elapsed

@@ -146,7 +146,7 @@ def build(config_path, verification_dir, output, scratch):
         "Additional provider captures could not be fetched without Microsoft sign-in. External datasets and threshold "
         "calibration remain untouched. No performance claim or training readiness is inferred from this run.", "",
         "Reproduce with `python -m ids.datasets.build_temporal --output NEW_DIRECTORY`. "
-        "See `docs/phase2.md` for setup, shared gateway APIs, fixture calculations and tests.", ""]
+        "See the repository README for setup and verification.", ""]
     (output / "REPORT.md").write_text("\n".join(body), encoding="utf-8")
     write_json(output / "artifact_checksums.json", {str(p.relative_to(output)): sha256(p)
         for p in sorted(output.rglob("*")) if p.is_file()})

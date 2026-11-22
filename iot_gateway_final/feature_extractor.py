@@ -43,7 +43,7 @@ class _Window:
             self.length_count += 1
             self.length_sum += size
             self.length_sum_sq += size * size
-            self.times.append(int(r['event_time_ms']))
+            self.times.append(int(r.get('event_time_ns', r['event_time_ms'] * 1_000_000)))
             self.ips.add(r['dst_ip'])
             if r['protocol'] in ('TCP', 'UDP') and r.get('dst_port') is not None:
                 self.ports.add(int(r['dst_port']))
@@ -79,7 +79,7 @@ class _Window:
         else:
             mean = std = 0.0
         ordered = sorted(self.times)
-        gaps = [b - a for a, b in zip(ordered, ordered[1:])]
+        gaps = [(b - a) / 1_000_000 for a, b in zip(ordered, ordered[1:])]
         iat_mean, iat_std = self._stats(gaps)
         return [self.out_count, self.in_count, self.out_bytes, self.in_bytes,
                 len(self.ips), len(self.ports), self.out_tcp, self.out_udp,
@@ -100,7 +100,7 @@ class FeatureExtractor:
         self.live = live
         self.lock = threading.RLock()
         self.state = {}  # device_id -> active window, revision, rolling history, counters
-        self.global_invalid_reason = None
+        self.history_start_ms = 0
         self.running = False
         self.thread = None
 
@@ -119,10 +119,27 @@ class FeatureExtractor:
                 if state['ip'] == ip or (device and state['device_id'] == device.get('device_id')):
                     del self.state[did]
 
+    def reset_worker_history(self, now_ms):
+        # Restart or rollback can occur in the middle of a second. Keep counters
+        # monotonic and start evidence at the first complete second after it.
+        with self.lock:
+            self.history_start_ms = (int(now_ms) // WINDOW_MS + 1) * WINDOW_MS
+            for state in self.state.values():
+                state['history'].clear()
+                state['active'] = {k: v for k, v in state['active'].items() if k >= self.history_start_ms}
+                state['next_start_ms'] = max(state['next_start_ms'], self.history_start_ms)
+
+    def is_current(self, sequence, now_ms):
+        last = sequence['windows'][-1]
+        with self.lock:
+            state = self.state.get(sequence['device_id'])
+            return bool(state and len(state['history']) == self.sequence_length
+                        and state['history'][-1] is last
+                        and now_ms < last['window_end_ms'] + WINDOW_MS + self.allowance_ms)
+
     def mark_capture_loss(self, reason='capture_drop'):
         """Unattributable drops or unsupported coverage invalidate every active history."""
         with self.lock:
-            self.global_invalid_reason = reason
             for state in self.state.values():
                 state['history'].clear()
                 for w in state['active'].values():
@@ -138,6 +155,8 @@ class FeatureExtractor:
             did = r['device_id']
             ms = int(r['event_time_ms'])
             bucket = (ms // WINDOW_MS) * WINDOW_MS
+            if bucket < self.history_start_ms:
+                return
             s = self.state.get(did)
             if s is None:
                 s = self._new_state(r)
@@ -150,7 +169,6 @@ class FeatureExtractor:
                 s['history'].clear()
                 for w in s['active'].values():
                     w.invalid.add('late_packet')
-                self.global_invalid_reason = 'late_packet'
                 return
             s['active'].setdefault(bucket, _Window(bucket)).add(r)
             s['last_seen_ms'] = max(s['last_seen_ms'], ms)

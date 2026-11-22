@@ -1,0 +1,29 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python": "3.12.12",
+  "logical_cpus_available": 6,
+  "guest_ram_bytes": 3942768640,
+  "workload": "20 local fixture clients, one distinct request ID per second per client, 15 rounds",
+  "clients": 20,
+  "rounds": 15,
+  "requests": 300,
+  "ok": 300,
+  "errors": {},
+  "cold_start_to_ready_seconds": 11.682684764000001,
+  "elapsed_workload_seconds": 14.957365449000001,
+  "max_client_schedule_lag_ms": 1.8177100000045243,
+  "successful_round_trip_ms": {
+    "p50": 7.5422110000005205,
+    "p95": 11.360074999998915
+  },
+  "successful_forward_ms": {
+    "p50": 0.499962,
+    "p95": 1.011133
+  },
+  "worker_cpu_seconds": 2.11,
+  "worker_sampled_peak_rss_bytes": 370360320,
+  "rss_sampling_interval_ms": 50,
+  "omp_num_threads": 1,
+  "openblas_num_threads": 1,
+  "scope": "Loopback HTTP, validation, preprocessing and model execution; excludes packet capture and policy."
+}

@@ -1,9 +1,0 @@
-{
-  "run": "run-004",
-  "run_status": "passed",
-  "checked_files": 84,
-  "mismatches": [],
-  "test_result": "54 passed",
-  "test_transcript": "run-004-console.log",
-  "report": "REPORT.md"
-}

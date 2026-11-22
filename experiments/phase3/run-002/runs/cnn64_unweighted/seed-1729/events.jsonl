@@ -1,6 +1,0 @@
-{"event": "epoch", "monotonic_ns": 28030077566000, "epoch": 1, "macro_f1": 0.4997407983411094, "best_epoch": 1}
-{"event": "epoch", "monotonic_ns": 28030349239800, "epoch": 2, "macro_f1": 0.4997407983411094, "best_epoch": 1}
-{"event": "epoch", "monotonic_ns": 28030541411100, "epoch": 3, "macro_f1": 0.4997407983411094, "best_epoch": 1}
-{"event": "epoch", "monotonic_ns": 28030782913500, "epoch": 4, "macro_f1": 0.4997407983411094, "best_epoch": 1}
-{"event": "epoch", "monotonic_ns": 28031084097200, "epoch": 5, "macro_f1": 0.4997407983411094, "best_epoch": 1}
-{"event": "epoch", "monotonic_ns": 28031343979200, "epoch": 6, "macro_f1": 0.4997407983411094, "best_epoch": 1}

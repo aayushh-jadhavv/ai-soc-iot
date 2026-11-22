@@ -28,7 +28,7 @@ def main():
     with PcapReader(str(args.pcap)) as capture:
         last_ms = None
         for packet in capture:
-            current_ms = int(float(packet.time) * 1000)
+            current_ms = int(packet.time * 1000)
             if last_ms is not None and current_ms < last_ms:
                 extractor.mark_capture_loss('out_of_order_pcap')
             # Leave a 100-ms allowance while processing increasing timestamps.

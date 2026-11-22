@@ -10,7 +10,7 @@ from config import (GATEWAY_ID, LAN_NET, LAN_INTERFACE, GATEWAY_IP, REGISTRY_FIL
                     ORDERING_ALLOWANCE_MS, FIXTURE_DIR, MODEL_ID, IDS_BASE_URL,
                     IDS_TOKEN_FILE, ENABLE_INFERENCE, CAPTURE_QUEUE_SIZE)
 from contracts import new_predict_request
-from cnn_client import CNNClient
+from cnn_client import CNNClient, WorkerRestarted
 from device_registry import DeviceRegistry
 from feature_extractor import FeatureExtractor, FEATURE_NAMES
 from packet_capture import PacketCapture
@@ -49,8 +49,14 @@ def main():
             print('[FIXTURE]', filepath, flush=True)
         if worker:
             try:
+                if not extractor.is_current(seq, time.time_ns() // 1_000_000):
+                    return
                 result = worker.predict(request)
-                print('[INFERENCE]', json.dumps(result), flush=True)
+                if extractor.is_current(seq, time.time_ns() // 1_000_000):
+                    print('[INFERENCE]', json.dumps(result), flush=True)
+            except WorkerRestarted as exc:
+                extractor.reset_worker_history(time.time_ns() // 1_000_000)
+                print('[HISTORY RESET]', str(exc), flush=True)
             except Exception as exc:
                 print('[INFERENCE UNAVAILABLE]', str(exc), flush=True)
         else:

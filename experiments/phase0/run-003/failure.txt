@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/mnt/c/Users/aayus/dev/AI-SoC/ids/export/smoke.py", line 191, in main
-    run(args, logger)
-  File "/mnt/c/Users/aayus/dev/AI-SoC/ids/export/smoke.py", line 85, in run
-    logger.event("delegate", index=i, **d)
-TypeError: RunLogger.event() got multiple values for argument 'name'

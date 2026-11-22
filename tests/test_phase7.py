@@ -21,10 +21,9 @@ from ids.runtime.worker import Worker
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HANDOFF = ROOT / ("predict_b4447618-e363-4704-8edf-9bbfe25bb8de_"
-                  "c12cf37c-64e4-4926-8e5d-865303207612.json")
-RELEASES = ROOT / "models/phase7"
-RUN = ROOT / "experiments/phase6/run-001"
+HANDOFF = ROOT / "tests/fixtures/gateway-request.json"
+RELEASES = ROOT / "models"
+RUN = ROOT / "evaluation/export"
 
 
 def request():

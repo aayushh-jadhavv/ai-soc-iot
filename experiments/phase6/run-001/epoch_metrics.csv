@@ -1,1 +1,0 @@
-epoch,split,loss,learning_rate,precision,recall,macro_f1,pr_auc,pr_auc_method,sample_count,epoch_seconds,examples_per_second
