@@ -1,1 +1,1 @@
-"""Phase 4/5 boundary. No pruning/search in Phase 0."""
+"""Phase 4 inference-only channel-mask search; dense compaction is deferred."""

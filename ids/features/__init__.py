@@ -1,8 +1,4 @@
-"""Reserved shared extractor boundary for Phase 2 offline/live adapters.
-
-Both gateway and dataset tools must import the same future extractor here.
-No packet parsing, history management or gateway policy is implemented in Phase 0.
-"""
+"""Shared Phase 2 extractor boundary. Gateway and datasets use these same APIs."""
 
 FEATURE_NAMES = (
     "out_packets", "in_packets", "out_ip_bytes", "in_ip_bytes",
@@ -13,3 +9,11 @@ FEATURE_NAMES = (
 FEATURE_UNITS = ("packets", "packets", "bytes", "bytes", "addresses", "ports",
                  "packets", "packets", "packets", "packets", "packets", "packets",
                  "bytes", "bytes", "milliseconds", "milliseconds")
+
+from ids.features.packets import PacketRecord, RawPacket, parse_packet, read_pcap
+from ids.features.extractor import Binding, FeatureHistory, Registry, Window, WindowExtractor
+from ids.features.adapters import LiveAdapter, OfflineAdapter
+
+__all__ = ["FEATURE_NAMES", "FEATURE_UNITS", "PacketRecord", "RawPacket", "parse_packet",
+           "read_pcap", "Binding", "Registry", "Window", "WindowExtractor", "FeatureHistory",
+           "LiveAdapter", "OfflineAdapter"]

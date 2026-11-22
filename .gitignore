@@ -8,4 +8,18 @@ build/
 dist/
 CSV-Files/
 READMEforBoTIoT.png
-output/documents/.~lock.CNN_IDS_Implementation_and_Optimization_Plan.docx#
+
+# Local reports, research papers and working files.
+/output/
+/tmp/
+/docs/
+/AI_SoC_Gateway_Technical_Report.pdf
+/AI-SoC-Integrated-Technical-Report.pdf
+/Modular_IoT_Security_Software_Design.odt
+/IOT SENTINEL -- Automated Device-Type.pdf
+/IoT-KEEPER -- Detecting Malicious IoT Network Activity Using Online Traffic Analysis at the Edge.pdf
+/LiReS IDS -- A Lightweight, Real-time, and Secure Intrusion Detection System for RISC-V Edge Devices.pdf
+
+# Local Android SDK configuration and Gradle state.
+/android/local.properties
+/android/.gradle/

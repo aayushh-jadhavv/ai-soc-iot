@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "source_commit": "ebc89bd71523bef874e486ca2afa2a89070e71dd",
+  "task": "attack_associated_traffic",
+  "mode": "OBSERVE",
+  "release_model": "cnn-unsw-ga-v1",
+  "selected_program": "ga_3/float32",
+  "bundle_manifest_sha256": "9d43e81a2e906bda779c9bc1a53053800acc382851d24be270eb4854a5b0e5d6",
+  "bundle_payload_sha256": {
+    "FeatureSequence.schema.json": "370afcc5712eece6095f7afdd2427c2a8b04bffbfeaf35df45f3ad2c205c0eee",
+    "FeatureWindow.schema.json": "8b97e2c5013be893836a8b148aef49a2a954b339251b5624dadcfe2af60e7be2",
+    "InferenceResult.schema.json": "17d70bd148540a4fa3b2bea574cd6337e71336f09b9be3aa434a53757500baca",
+    "feature_schema.json": "a9f58e491e656a65c2f924e2c9e6add8e6b4ad4294a38aebebcf7c77c745f459",
+    "model.pte": "7802a1c3636b4859eaabb1d6fdf31ec24ebfddc66668a002844de43974e86ef1",
+    "preprocess.json": "59e7b2667228141d96095f1a878675659c2c302a2a2dc428c94e0b15603c5a9c",
+    "warmup.json": "625d10d59a0a61c057519bc6ea70141959bc1b0772cbd35bbf8613001759a2e5"
+  },
+  "state_dict_sha256": {
+    "unpruned": "0b2f9fb0dc7256476608f771e5b2a3dc0d521d9ff72dd43a9f86ec71cdc25f81",
+    "direct_small_seed_1729": "d82b38eab39e97f566f543101f4c8ce6e709f65bd67b3168b4e70ec90b0cf8ca",
+    "direct_small_seed_2718": "56fe8fd1109b53783a7aef15dfc95b49e8c22d3d28072691e424d2b3e9767409",
+    "direct_small_seed_31415": "78b3300453ca2d057beb40761471a3f7cc05eadfdc054ee93c65eb0e004ceb3a",
+    "ga_1": "84489df37c83d3c20560ac5f2e3ce235401144fb0ef4a958e6afbed87e717e2e",
+    "ga_2": "08a6294655c15dd77462b1a61fe5a9192abe137148e00b522ce11ac1576ef02f",
+    "ga_3": "7e195483a0ced9a9d8d173a420f353aa089802f150c38cb99764045286d1bd56"
+  },
+  "program_sha256": {
+    "direct_small_seed_1729/float32": "986fe5c7d2aed5e369b595eaf06c37752b77596d6d711ab75cefef9e6a8e8a1b",
+    "direct_small_seed_1729/int8": "c0818f9d3ec50a33efbbcff25ec44f3196888ffbc8132009b79406c205c86283",
+    "direct_small_seed_2718/float32": "dd14fecca4a82e3fd743720af245b0a80ef7327a1fd5a79e6520cb03af736cae",
+    "direct_small_seed_2718/int8": "826fda8524da9513eb61106a7fc5673a8528ac6b27a58fd76025530903b11059",
+    "direct_small_seed_31415/float32": "b4debeb817df93823b3fe0d65a23fde5143e26049488da1fdd85b06b76dafd10",
+    "direct_small_seed_31415/int8": "2e9a41cb9e0e9e74223cdd952c732ff1f5ad4f2db4981841148cf676760285d3",
+    "ga_1/float32": "15a8385403eccbb3c9024b2120b63b4fc3be2f3c8e8bd105a6e3fe8ebac139b6",
+    "ga_1/int8": "a1dcbc3e6a28cf34acc3c3cf42dab815b567effe14d1eac4901099bf4bf23d46",
+    "ga_2/float32": "3017514a636c05ec99d948ac159029af6bae4afe8b09c67756aaf67c7d6359f3",
+    "ga_2/int8": "0735f072f97a2e1fb9b0ad3672d7dcb9b451ddd166dcc15077af0a4dbdf1b90d",
+    "ga_3/float32": "7802a1c3636b4859eaabb1d6fdf31ec24ebfddc66668a002844de43974e86ef1",
+    "ga_3/int8": "338ea11bfcd005a410033107a0a484b015ea449e231ce2bbd0aee17106742931",
+    "unpruned/float32": "e288dae9b127b66e2f62a36b2f53f18e2d270c5e7819d7ba6c91a090462c97a7",
+    "unpruned/int8": "8bbda59fca681a5e8d17835dff3447a6de0bc65d020e241db76c948b7309c393"
+  },
+  "runtime": {
+    "python": "3.12.12",
+    "torch": "2.9.0",
+    "executorch": "1.0.0",
+    "backend": "XNNPACK",
+    "batch": 1,
+    "comparison_threads": 1,
+    "precision": "float32",
+    "input_shape": [
+      1,
+      16,
+      8
+    ],
+    "queue_capacity": 8,
+    "deadline_seconds": 1.0,
+    "cache_entries": 256,
+    "cache_ttl_seconds": 60
+  },
+  "comparison": {
+    "threshold": 0.5,
+    "positive_at_equality": true,
+    "score": "float64 sigmoid of float32 logit",
+    "calibration": null,
+    "deployment_threshold": null,
+    "max_recall_and_macro_f1_loss_vs_unpruned": 0.02,
+    "int8_role": "diagnostic only; representative training idle traffic absent",
+    "threshold_reserve": "unused; no policy objective or independent validation group to justify a deployment threshold"
+  },
+  "dataset": {
+    "name": "UNSW-NB15",
+    "group": "unsw-jan22-source-group",
+    "role": "internal_test",
+    "split": {
+      "mode": "within_group_chronological",
+      "partitions": [
+        {
+          "partition_id": "train",
+          "group_id": "unsw-jan22-source-group",
+          "role": "train",
+          "start_ns": 1421927377000000000,
+          "end_ns": 1421928347000000000,
+          "dataset": "UNSW-NB15",
+          "original_session_id": null
+        },
+        {
+          "partition_id": "development",
+          "group_id": "unsw-jan22-source-group",
+          "role": "validation",
+          "start_ns": 1421928347000000000,
+          "end_ns": 1421928508000000000,
+          "dataset": "UNSW-NB15",
+          "original_session_id": null
+        },
+        {
+          "partition_id": "reserved_threshold",
+          "group_id": "unsw-jan22-source-group",
+          "role": "threshold",
+          "start_ns": 1421928508000000000,
+          "end_ns": 1421928670000000000,
+          "dataset": "UNSW-NB15",
+          "original_session_id": null
+        },
+        {
+          "partition_id": "internal_test",
+          "group_id": "unsw-jan22-source-group",
+          "role": "internal_test",
+          "start_ns": 1421928670000000000,
+          "end_ns": 1421928994000000000,
+          "dataset": "UNSW-NB15",
+          "original_session_id": null
+        }
+      ],
+      "history_rows": 8,
+      "history_purge_seconds": 7,
+      "assignment_before_samples": true,
+      "connection_policy": "purge whole windows touched by any crossing connection or reused tuple",
+      "parent_split_sha256": "c7f5032e6370c540b4cef311068e928380cfa441c822c682b160ab4dce31b075",
+      "derivation": "fixed integer-second midpoint of validation; no outcome-based boundary search"
+    },
+    "split_sha256": "2c10ebe392ad56cc6a43f0336b3b75342522be439afa0de2439be40d1a638004",
+    "phase2_files": {
+      "internal_test/raw.npy": "29bbcafa6ae4023b9a663c722677539e9540682d576f63469a01c1024abc4a5c",
+      "internal_test/tensor.npy": "579d0781fd200cd9343cf5b0999cedf1fc5fbad0d2ecc93f28078d9bb242eefc",
+      "internal_test/samples.parquet": "1e3b49df1593d6d839c52b22fe336544b5f310fcd492c145a9d7b8d05286a771",
+      "counts_and_leakage.json": "97857dde1c05be13b3746e9d66898addbb68df51ece1799c5df6e934a599a9af"
+    },
+    "captures_sha256": {
+      "22-1-2015_1.pcap": "5f5c1b558d42e818f169b4035c7cf185a7c15da7718127927b316dd1189e2b61",
+      "22-1-2015_2.pcap": "fe21a8b34f38701cbf82dbebccc5cae628ccb1f035cf8a2c9da398a5d96dd1ca"
+    }
+  },
+  "unavailable": {
+    "UNSW-NB15_independent_group": "no independently held-out capture group in supplied data",
+    "CSE-CIC-IDS2018": "no validated raw capture and label adapter",
+    "BoT-IoT": "no validated raw capture and label adapter",
+    "gateway_incident_rate_and_delay": "no policy event log, benign device-hours under policy or attack onset/alert pairs"
+  },
+  "analysis": {
+    "scope": [
+      "benign",
+      "reconnaissance",
+      "dos"
+    ],
+    "unit": "retained labeled final endpoint-second with eight valid windows",
+    "metrics": [
+      "prevalence",
+      "precision",
+      "recall",
+      "macro_f1",
+      "average_precision_ties_grouped",
+      "confusion_counts",
+      "per_family",
+      "per_group",
+      "label_coverage",
+      "exclusions"
+    ],
+    "uncertainty": "independent source group is the sampling unit; no interval from a single group",
+    "model_selection": "fixed before scoring; comparisons do not change the shipped model"
+  }
+}

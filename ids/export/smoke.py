@@ -179,7 +179,11 @@ def main():
         "code_hashes": source_hashes(root), "environment": environment(), "host": host,
         "model_hash": None, "batch_size": 1, "requested_torch_threads": 1,
         "reproduction_command": "python -m ids.export.smoke " + shlex.join(sys.argv[1:]),
-        "source_documents": {p.name: sha256(p) for p in (root/"output/documents").iterdir() if p.name.endswith(("_VM.docx", "_VM.odt"))}})
+        "source_documents": {
+            path.name: sha256(path)
+            for path in (root / "output/documents").glob("*")
+            if path.is_file() and path.name.endswith(("_VM.docx", "_VM.odt"))
+        }})
     write_json(logger.output / "environment_manifest.json", {"host": host, **logger.manifest["environment"]})
     try:
         flatc_version = subprocess.run([os.environ.get("FLATC_EXECUTABLE", "flatc"), "--version"],

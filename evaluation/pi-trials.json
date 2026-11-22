@@ -1,0 +1,113 @@
+{
+  "source_commit": "ebc89bd71523bef874e486ca2afa2a89070e71dd",
+  "board": "Raspberry Pi 3 Model B Plus Rev 1.3",
+  "architecture": "aarch64",
+  "kernel": "6.18.50+rpt-rpi-v8",
+  "model_id": "cnn-unsw-ga-v1",
+  "model_sha256": "7802a1c3636b4859eaabb1d6fdf31ec24ebfddc66668a002844de43974e86ef1",
+  "reference_passed": true,
+  "session_checks": {
+    "same_windows_adapter": true,
+    "same_client_wifi_address_and_ssid": true,
+    "same_physical_pi_boot_worker_and_interface": true,
+    "three_fresh_gateway_capture_sessions": true,
+    "reference_replay_passed_on_pi": true,
+    "original_wifi_restored": true,
+    "copied_requests_match_originals_and_private_bindings": true,
+    "served_model_matches_hardware_artifact": true
+  },
+  "trials": [
+    {
+      "trial": "trial-01",
+      "pass": true,
+      "first_echo_at_pi_utc": "2026-11-21T22:33:14.668024+00:00",
+      "sent": 20,
+      "received": 20,
+      "pcap_echo_requests": 20,
+      "pcap_echo_replies": 20,
+      "status": "ok",
+      "model_forward_ms": 0.461407,
+      "uncalibrated_score": 0.0,
+      "fixture_windows": 8,
+      "echo_requests_in_fixture": 8,
+      "windows_containing_echoes": 8,
+      "gateway_callback_overflows": 0,
+      "tcpdump_kernel_drops": 0,
+      "non_ok_inferences_for_test_device": 0
+    },
+    {
+      "trial": "trial-02",
+      "pass": true,
+      "first_echo_at_pi_utc": "2026-11-21T22:33:50.772025+00:00",
+      "sent": 20,
+      "received": 20,
+      "pcap_echo_requests": 20,
+      "pcap_echo_replies": 20,
+      "status": "ok",
+      "model_forward_ms": 0.459221,
+      "uncalibrated_score": 0.0,
+      "fixture_windows": 8,
+      "echo_requests_in_fixture": 8,
+      "windows_containing_echoes": 8,
+      "gateway_callback_overflows": 0,
+      "tcpdump_kernel_drops": 0,
+      "non_ok_inferences_for_test_device": 0
+    },
+    {
+      "trial": "trial-03",
+      "pass": true,
+      "first_echo_at_pi_utc": "2026-11-21T22:34:26.743737+00:00",
+      "sent": 20,
+      "received": 20,
+      "pcap_echo_requests": 20,
+      "pcap_echo_replies": 20,
+      "status": "ok",
+      "model_forward_ms": 0.464064,
+      "uncalibrated_score": 0.0,
+      "fixture_windows": 8,
+      "echo_requests_in_fixture": 8,
+      "windows_containing_echoes": 8,
+      "gateway_callback_overflows": 0,
+      "tcpdump_kernel_drops": 0,
+      "non_ok_inferences_for_test_device": 0
+    }
+  ],
+  "private_evidence_sha256": {
+    "SHA256SUMS.txt": "4abfc1385bd3f900fc3f382c956427853a408216c86c3a8705d492e4c410a4ec",
+    "trial-results.json": "700f372dec6d8d8a4ea381fcf1cb0772fc5ec019e23b4d1924c7f26fb454d8ed",
+    "provenance.json": "815f2ecb1c5929a978e3dd2fb1bd2d02a7ea39e456ba4278ad4f3144bb74ab42",
+    "pi-phase7.json": "01c39547295fd168d936373be39c384659df784d8a63719cab519d760095c176",
+    "verify_evidence.py": "cdccc3848c18242c44153d2cd3a9dc886fb409feaa91d19af6176fb989b01ebf"
+  },
+  "release_offline_replay": {
+    "environment": "Ubuntu WSL2 x86-64, ExecuTorch 1.0.0, Scapy 2.6.1",
+    "compared_feature": "out_icmp_packets at matching one-second timestamps",
+    "captures": "ICMP-filtered packet captures; the live gateway also observed background traffic",
+    "trials": [
+      {
+        "trial": "trial-01",
+        "pcap_sha256": "8feeea8a44c0c9973019020fba5c5b65830ecb058cce5341a214f64071c505dc",
+        "matched_outgoing_icmp_windows": 8,
+        "offline_score": 0.0,
+        "recorded_live_score": 0.0,
+        "replayed_live_score": 0.0
+      },
+      {
+        "trial": "trial-02",
+        "pcap_sha256": "b24f9ff8715aaf4954f68e0226f61c18283ec183760291a91b4788223db563f0",
+        "matched_outgoing_icmp_windows": 8,
+        "offline_score": 0.0,
+        "recorded_live_score": 0.0,
+        "replayed_live_score": 0.0
+      },
+      {
+        "trial": "trial-03",
+        "pcap_sha256": "30b73cc0e3bea97145704815af8d2ce7be60b082856872d0a016d693ffaea16c",
+        "matched_outgoing_icmp_windows": 8,
+        "offline_score": 0.0,
+        "recorded_live_score": 0.0,
+        "replayed_live_score": 0.0
+      }
+    ]
+  }
+}

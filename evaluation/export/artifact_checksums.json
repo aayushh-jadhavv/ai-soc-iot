@@ -1,0 +1,8 @@
+{
+  "handoff.json": "7787fc1f6b8b9899afc3fd9d9162dab91add270b1cc729d453aca3081aa9d8c2",
+  "shared/preprocess.json": "59e7b2667228141d96095f1a878675659c2c302a2a2dc428c94e0b15603c5a9c",
+  "shared/feature_schema.json": "a9f58e491e656a65c2f924e2c9e6add8e6b4ad4294a38aebebcf7c77c745f459",
+  "ga_3/float32/model.pte": "7802a1c3636b4859eaabb1d6fdf31ec24ebfddc66668a002844de43974e86ef1",
+  "ga_3/float32/references.parquet": "e29b67ec22866af9bd53d4822e028575a7005330b0464cc4b713d69f5a495de3",
+  "ga_3/float32/exported.pt2": "61e5f4688160780cc47d0714271d72787058009d7d7bba54aeafb521629eafb8"
+}

@@ -1,0 +1,48 @@
+{
+  "architecture": "ga_3",
+  "precision": "float32",
+  "artifact": "ga_3/float32/model.pte",
+  "pte_sha256": "7802a1c3636b4859eaabb1d6fdf31ec24ebfddc66668a002844de43974e86ef1",
+  "state_dict_sha256": "7e195483a0ced9a9d8d173a420f353aa089802f150c38cb99764045286d1bd56",
+  "final_threshold": null,
+  "selection_threshold": 0.5,
+  "score_type": "uncalibrated_sigmoid",
+  "independent_validation": false,
+  "shared_artifacts": {
+    "feature_schema.json": "a9f58e491e656a65c2f924e2c9e6add8e6b4ad4294a38aebebcf7c77c745f459",
+    "preprocess.json": "59e7b2667228141d96095f1a878675659c2c302a2a2dc428c94e0b15603c5a9c",
+    "split_manifest.json": "2c10ebe392ad56cc6a43f0336b3b75342522be439afa0de2439be40d1a638004"
+  },
+  "int8_decision": {
+    "accepted": false,
+    "checks": {
+      "phase5_quality_eligible": true,
+      "calibration_coverage": false,
+      "quantized_affines": true,
+      "numerical": true,
+      "float_parent_quality": true,
+      "unpruned_quality": true,
+      "measured_value": true
+    },
+    "failure_reasons": [
+      "calibration_coverage"
+    ],
+    "parent_losses": {
+      "recall": 0.0,
+      "macro_f1": 0.0
+    },
+    "baseline_gate": {
+      "accepted": true,
+      "absolute_losses": {
+        "recall": 0.0,
+        "macro_f1": -0.05766368836571645
+      },
+      "failed_metrics": [],
+      "recall_loss_limit": 0.02,
+      "macro_f1_loss_limit": 0.02
+    },
+    "pte_size_ratio": 0.7479653452349698,
+    "measured_p50_ratio": 1.0029740738346156,
+    "measured_p95_ratio": 0.6859994955040508
+  }
+}

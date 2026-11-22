@@ -1,0 +1,9 @@
+# Keep checksum-verified model, evaluation and replay inputs byte-for-byte.
+models/** -text
+evaluation/export/** -text
+evaluation/freeze.json -text
+evaluation/dataset-audit.json -text
+tests/fixtures/gateway-request.json -text
+
+android/gradlew text eol=lf
+android/prepare-model.sh text eol=lf
