@@ -3,3 +3,4 @@ experiments/phase6/** -text
 models/phase7/** -text
 scripts/phase6/*.py text eol=lf
 scripts/review_phase6_crossings.py text eol=lf
+evaluation/*.json text eol=lf
