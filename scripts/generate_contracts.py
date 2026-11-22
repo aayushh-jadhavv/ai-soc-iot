@@ -160,8 +160,8 @@ def main():
     health = obj({"ready": {"type": "boolean"}, "model_loading": {"type": "boolean"},
                   "recent_errors": {"type": "array", "maxItems": 32, "items": {"type": "string"}}})
     save("contracts/openapi.json", {"openapi": "3.1.0", "info": {"title": "IDS Phase 7 boundary specification", "version": "1.0",
-         "description": "Phase 0 contract only. No server implemented; untrained smoke artifacts must not serve predictions."},
-         "servers": [{"url": "http://127.0.0.1:8765", "description": "Proposed local-only service port"}],
+         "description": "Authenticated local inference worker. X-IDS-History-Epoch changes on worker restart or bundle change."},
+         "servers": [{"url": "http://127.0.0.1:8000", "description": "Gateway loopback default"}],
          "security": [{"ServiceCredential": []}],
          "components": {"securitySchemes": {"ServiceCredential": {"type": "http", "scheme": "bearer"}},
                         "schemas": {"Problem": problem}},
