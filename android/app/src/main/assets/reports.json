@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "gateway_id": "pi3-demo",
+  "data_source": "synthetic",
+  "reports": [
+    {
+      "report_id": "demo-001",
+      "revision": 1,
+      "device": "Hallway camera",
+      "factual_summary": "The camera contacted 18 destinations in an 8-second window.",
+      "coverage": "Sample includes traffic visible to the gateway.",
+      "score": 0.84,
+      "recommendation": "Review the camera's recent connections.",
+      "action_status": "NOT_EXECUTED"
+    },
+    {
+      "report_id": "demo-002",
+      "revision": 2,
+      "device": "Workshop plug",
+      "factual_summary": "A simulated restriction was recorded by the gateway.",
+      "coverage": "Sample contains a recorded action result.",
+      "score": 0.91,
+      "recommendation": "Review the recorded restriction.",
+      "action_status": "INSTALLED"
+    },
+    {
+      "report_id": "demo-003",
+      "revision": 1,
+      "device": "Room sensor",
+      "factual_summary": "Traffic coverage was insufficient for a detector score.",
+      "coverage": "Part of the observation window was missing.",
+      "score": null,
+      "recommendation": "Check gateway capture coverage.",
+      "action_status": "NOT_EXECUTED"
+    },
+    {
+      "report_id": "demo-004",
+      "revision": 2,
+      "device": "Living room camera",
+      "factual_summary": "The simulated gateway attempted a restriction and recorded a failure.",
+      "coverage": "Sample contains a recorded action result.",
+      "score": 0.88,
+      "recommendation": "Check why the restriction failed.",
+      "action_status": "FAILED"
+    }
+  ]
+}
